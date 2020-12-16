@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userfile type="properties">
+	<password>twUVe3uRIwc=</password>
+	<max_idle_time>0</max_idle_time>
+	<max_logins>0</max_logins>
+	<version>1.0</version>
+	<userVersion>6</userVersion>
+	<user_name>fadmin</user_name>
+	<max_logins_ip>8</max_logins_ip>
+	<logins_ip_auto_kick>false</logins_ip_auto_kick>
+	<updated_by_username>fadmin</updated_by_username>
+	<password_history></password_history>
+	<site>(CONNECT)</site>
+	<updated_by_email></updated_by_email>
+	<updated_time>1607944625129</updated_time>
+	<root_dir>/</root_dir>
+	<created_time>12142020111704</created_time>
+	<ignore_max_logins>true</ignore_max_logins>
+</userfile>
+

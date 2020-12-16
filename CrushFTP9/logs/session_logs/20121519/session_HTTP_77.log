@@ -1,0 +1,4 @@
+SESSION|12/15/2020 19:07:13.690|[HTTP:77_63772:lookup:8080] Accepting connection from: 172.17.0.1:63772
+SESSION|12/15/2020 19:07:13.691|[HTTP:77_63772_vYU::172.17.0.1] READ: *GET /WebInterface/Resources/js/jQuery/jquery.Electron.Inject.js HTTP/1.1*
+SESSION|12/15/2020 19:07:13.691|[HTTP:77_63772::172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|12/15/2020 19:07:43.705|[77_63772::172.17.0.1] *Disconnected:*

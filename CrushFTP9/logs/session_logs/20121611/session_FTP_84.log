@@ -1,0 +1,29 @@
+SESSION|12/16/2020 11:56:32.939|[FTP:lookup:21][84] Accepting connection from: 172.17.0.1:61146
+SESSION|12/16/2020 11:56:32.942|[FTP:84::172.17.0.1] READ : *AUTH TLS*
+SESSION|12/16/2020 11:56:32.943|SSL/TLS : Negotiation Failed.
+SESSION|12/16/2020 11:56:32.943|SSL/TLS : Have you setup a certificate in the CrushFTP advanced prefs under the SSL tab?
+SESSION|12/16/2020 11:56:32.943|SSL/TLS : java.lang.Exception: Invalid Encryption type : TLS
+SESSION|12/16/2020 11:56:32.943|[FTP:84::172.17.0.1] WROTE: *550 Server not configured for encryption.*
+SESSION|12/16/2020 11:56:32.945|[FTP:84::172.17.0.1] READ : *AUTH SSL*
+SESSION|12/16/2020 11:56:32.946|SSL/TLS : Negotiation Failed.
+SESSION|12/16/2020 11:56:32.946|SSL/TLS : Have you setup a certificate in the CrushFTP advanced prefs under the SSL tab?
+SESSION|12/16/2020 11:56:32.946|SSL/TLS : java.lang.Exception: Invalid Encryption type : SSL
+SESSION|12/16/2020 11:56:32.946|[FTP:84::172.17.0.1] WROTE: *550 Server not configured for encryption.*
+SESSION|12/16/2020 11:56:32.951|[FTP:84::172.17.0.1] READ : *USER ale*
+SESSION|12/16/2020 11:56:32.955|[FTP:84:ale:172.17.0.1] WROTE: *331 Username OK.  Need password.*
+SESSION|12/16/2020 11:56:32.956|[FTP:84:ale:172.17.0.1] READ : *PASS*
+SESSION|12/16/2020 11:56:32.978|[FTP:84:ale:172.17.0.1] WROTE: *230 Password OK.  Connected. logged in*
+SESSION|12/16/2020 11:56:32.980|[FTP:84:ale:172.17.0.1] READ : *CLNT FileZilla*
+SESSION|12/16/2020 11:56:32.980|[FTP:84:ale:172.17.0.1] WROTE: *200 Noted.*
+SESSION|12/16/2020 11:56:32.982|[FTP:84:ale:172.17.0.1] READ : *OPTS UTF8 ON*
+SESSION|12/16/2020 11:56:32.982|[FTP:84:ale:172.17.0.1] WROTE: *200 UTF8 OPTS ON.*
+SESSION|12/16/2020 11:56:32.989|[FTP:84:ale:172.17.0.1] READ : *PWD *
+SESSION|12/16/2020 11:56:32.989|[FTP:84:ale:172.17.0.1] WROTE: *257 "/" PWD command successful.*
+SESSION|12/16/2020 11:56:32.992|[FTP:84:ale:172.17.0.1] READ : *TYPE I*
+SESSION|12/16/2020 11:56:32.992|[FTP:84:ale:172.17.0.1] WROTE: *200 Command ok : Binary type selected.*
+SESSION|12/16/2020 11:56:32.994|[FTP:84:ale:172.17.0.1] READ : *EPSV *
+SESSION|12/16/2020 11:56:33.005|[FTP:84:ale:172.17.0.1] WROTE: *229 Entering Extended Passive Mode (|||2000|)*
+SESSION|12/16/2020 11:56:33.007|[FTP:84:ale:172.17.0.1] READ : *MLSD *
+SESSION|12/16/2020 11:56:33.018|[FTP:84:ale:172.17.0.1] WROTE: *150 Opening data connection for file list.*
+SESSION|12/16/2020 11:56:33.021|[FTP:84:ale:172.17.0.1] WROTE: *226 Directory transfer complete. (generate:1ms)(send:2ms)*
+SESSION|12/16/2020 12:06:33.105|[FTP:84:ale:172.17.0.1] *Disconnected.*

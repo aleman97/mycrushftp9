@@ -1,0 +1,8 @@
+SESSION|12/16/2020 13:50:52.681|[HTTP:150_61564:lookup:8080] Accepting connection from: 172.17.0.1:61564
+SESSION|12/16/2020 13:50:52.682|[HTTP:150_61564_Au3::172.17.0.1] READ: *GET /WebInterface/Resources/js/jQuery/jquery.Electron.Inject.js HTTP/1.1*
+SESSION|12/16/2020 13:50:52.684|[HTTP:150_61564::172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|12/16/2020 13:50:55.087|[HTTP:150_61564_kpe::172.17.0.1] READ: *GET /WebInterface/Resources/js/jQuery/jquery-migrate-1.4.1.min.js HTTP/1.1*
+SESSION|12/16/2020 13:50:55.088|[HTTP:150_61564::172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|12/16/2020 13:50:55.947|[HTTP:150_61564_fdP::172.17.0.1] READ: *GET /WebInterface/Resources/js/jQuery/jquery-migrate-3.0.0.min.js HTTP/1.1*
+SESSION|12/16/2020 13:50:55.949|[HTTP:150_61564::172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|12/16/2020 13:51:26.000|[150_61564::172.17.0.1] *Disconnected:*

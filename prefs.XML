@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server_prefs type="properties">
+	<replicate_preferences>true</replicate_preferences>
+	<megabytes_label>Mega</megabytes_label>
+	<sqlItems type="properties">
+		<db_user_inheritance_delete>DELETE FROM INHERITANCE WHERE USERID=?</db_user_inheritance_delete>
+		<db_user_domain_root_list_insert>INSERT INTO DOMAIN_ROOT_LIST (USERID,DOMAIN,PATH,SORT_ORDER) VALUES(?,?,?,?)</db_user_domain_root_list_insert>
+		<db_read_only>false</db_read_only>
+		<db_user_user_properties_id_query>SELECT * FROM USER_PROPERTIES WHERE USERID=?</db_user_user_properties_id_query>
+		<db_user_events_insert>INSERT INTO EVENTS5 (USERID,EVENT_NAME,PROP_NAME,PROP_VALUE) VALUES(?,?,?,?)</db_user_events_insert>
+		<db_user_web_buttons_id_query>SELECT * FROM WEB_BUTTONS WHERE USERID=?</db_user_web_buttons_id_query>
+		<db_user_web_buttons_insert>INSERT INTO WEB_BUTTONS (USERID,SQL_FIELD_KEY,SQL_FIELD_VALUE,FOR_MENU,FOR_CONTEXT_MENU,SORT_ORDER) VALUES(?,?,?,?,?,?)</db_user_web_buttons_insert>
+		<db_user_insert>INSERT INTO USERS (USERNAME,PASSWORD,SERVER_GROUP) VALUES(?,?,?)</db_user_insert>
+		<db_user_vfs_properties_insert>INSERT INTO VFS_PROPERTIES (USERID,PATH,PROP_NAME,PROP_VALUE) VALUES(?,?,?,?)</db_user_vfs_properties_insert>
+		<db_user_vfs_id_query>SELECT * FROM VFS WHERE USERID=?</db_user_vfs_id_query>
+		<db_modified_query>SELECT * FROM MODIFIED_TIMES WHERE SERVER_GROUP=? AND PROP_NAME=?</db_modified_query>
+		<db_driver>org.gjt.mm.mysql.Driver</db_driver>
+		<db_modified_insert>INSERT INTO MODIFIED_TIMES (SERVER_GROUP,PROP_NAME,PROP_VALUE) VALUES(?,?,?)</db_modified_insert>
+		<db_user_ip_restrictions_delete>DELETE FROM IP_RESTRICTIONS WHERE USERID=?</db_user_ip_restrictions_delete>
+		<db_user_web_customizations_insert>INSERT INTO WEB_CUSTOMIZATIONS (USERID,SQL_FIELD_KEY,SQL_FIELD_VALUE,SORT_ORDER) VALUES(?,?,?,?)</db_user_web_customizations_insert>
+		<db_groups_delete>DELETE FROM GROUPS WHERE SERVER_GROUP=?</db_groups_delete>
+		<db_user_vfs_delete>DELETE FROM VFS WHERE USERID=?</db_user_vfs_delete>
+		<db_user>crushftp</db_user>
+		<db_user_domain_root_list_id_query>SELECT * FROM DOMAIN_ROOT_LIST WHERE USERID=?</db_user_domain_root_list_id_query>
+		<db_user_properties_insert>INSERT INTO USER_PROPERTIES (USERID,PROP_NAME,PROP_VALUE) VALUES(?,?,?)</db_user_properties_insert>
+		<db_user_vfs_permissions_insert>INSERT INTO VFS_PERMISSIONS (USERID,PATH,PRIVS) VALUES(?,?,?)</db_user_vfs_permissions_insert>
+		<db_groups_query>SELECT * FROM GROUPS G LEFT JOIN USERS ON G.USERID = USERS.USERID WHERE G.SERVER_GROUP=?</db_groups_query>
+		<db_user_vfs_properties_id_query>SELECT * FROM VFS_PROPERTIES WHERE USERID=?</db_user_vfs_properties_id_query>
+		<db_groups_user_delete>DELETE FROM GROUPS WHERE USERID=?</db_groups_user_delete>
+		<db_user_inheritance_insert>INSERT INTO INHERITANCE (USERID,INHERIT_USERNAME,SORT_ORDER) VALUES(?,?,?)</db_user_inheritance_insert>
+		<db_user_events_id_query>SELECT * FROM EVENTS5 WHERE USERID=?</db_user_events_id_query>
+		<db_user_domain_root_list_delete>DELETE FROM DOMAIN_ROOT_LIST WHERE USERID=?</db_user_domain_root_list_delete>
+		<db_debug>true</db_debug>
+		<db_user_email_query>SELECT USERNAME FROM USERS LEFT JOIN USER_PROPERTIES ON USERS.USERID = USER_PROPERTIES.USERID WHERE SERVER_GROUP = ? AND PROP_NAME = 'email' AND PROP_VALUE = ?</db_user_email_query>
+		<db_user_events_delete>DELETE FROM EVENTS5 WHERE USERID=?</db_user_events_delete>
+		<db_user_update>UPDATE USERS SET USERNAME=?, PASSWORD=? WHERE UPPER(USERNAME)=UPPER(?) AND SERVER_GROUP=?</db_user_update>
+		<db_user_inheritance_id_query>SELECT * FROM INHERITANCE WHERE USERID=?</db_user_inheritance_id_query>
+		<db_driver_file>./mysql-connector-java-5.0.4-bin.jar</db_driver_file>
+		<db_user_web_buttons_delete>DELETE FROM WEB_BUTTONS WHERE USERID=?</db_user_web_buttons_delete>
+		<db_user_delete>DELETE FROM USERS WHERE UPPER(USERNAME)=UPPER(?) AND SERVER_GROUP=?</db_user_delete>
+		<db_user_vfs_properties_delete>DELETE FROM VFS_PROPERTIES WHERE USERID=?</db_user_vfs_properties_delete>
+		<db_mysql_groups_compatibility>true</db_mysql_groups_compatibility>
+		<db_user_properties_query>SELECT * FROM USER_PROPERTIES WHERE USERID=?</db_user_properties_query>
+		<db_user_inheritance_query>SELECT * FROM INHERITANCE WHERE SERVER_GROUP=?</db_user_inheritance_query>
+		<db_modified_delete>DELETE FROM MODIFIED_TIMES WHERE SERVER_GROUP=? AND PROP_NAME=?</db_modified_delete>
+		<db_user_ip_restrictions_insert>INSERT INTO IP_RESTRICTIONS (USERID,START_IP,TYPE,STOP_IP,SORT_ORDER) VALUES(?,?,?,?,?)</db_user_ip_restrictions_insert>
+		<db_user_vfs_permissions_id_query>SELECT * FROM VFS_PERMISSIONS WHERE USERID=?</db_user_vfs_permissions_id_query>
+		<db_user_query>SELECT * FROM USERS WHERE SERVER_GROUP=? and UPPER(USERNAME)=UPPER(?)</db_user_query>
+		<db_pass></db_pass>
+		<db_user_web_customizations_id_query>SELECT * FROM WEB_CUSTOMIZATIONS WHERE USERID=?</db_user_web_customizations_id_query>
+		<db_groups_insert>INSERT INTO GROUPS (GROUPNAME, USERID, SERVER_GROUP) VALUES(?,?,?)</db_groups_insert>
+		<db_user_vfs_insert>INSERT INTO VFS (USERID,URL,TYPE,PATH,SORT_ORDER) VALUES(?,?,?,?,?)</db_user_vfs_insert>
+		<db_user_web_customizations_delete>DELETE FROM WEB_CUSTOMIZATIONS WHERE USERID=?</db_user_web_customizations_delete>
+		<db_user_vfs_vdir_insert>INSERT INTO VFS (USERID,URL,TYPE,PATH,SORT_ORDER) VALUES(?,?,?,?,?)</db_user_vfs_vdir_insert>
+		<db_url>jdbc:mysql://127.0.0.1:3306/crushftp?autoReconnect=true</db_url>
+		<db_user_properties_delete>DELETE FROM USER_PROPERTIES WHERE USERID=?</db_user_properties_delete>
+		<db_user_vfs_permissions_query>SELECT * FROM VFS_PERMISSIONS WHERE USERID=?</db_user_vfs_permissions_query>
+		<db_user_vfs_permissions_delete>DELETE FROM VFS_PERMISSIONS WHERE USERID=?</db_user_vfs_permissions_delete>
+		<db_users_query>SELECT * FROM USERS WHERE SERVER_GROUP=? order by USERNAME</db_users_query>
+		<db_user_ip_restrictions_id_query>SELECT * FROM IP_RESTRICTIONS WHERE USERID=?</db_user_ip_restrictions_id_query>
+	</sqlItems>
+	<proxyRules type="vector"></proxyRules>
+	<syncs_delete_journal>DELETE from FILE_JOURNAL where RID = ?</syncs_delete_journal>
+	<minimum_speed_alert_seconds>30</minimum_speed_alert_seconds>
+	<webdav_agents></webdav_agents>
+	<stats_db_url>jdbc:derby:./statsDB;create=true</stats_db_url>
+	<ssh_close_all>false</ssh_close_all>
+	<disable_dir_filter>true</disable_dir_filter>
+	<remove_keywords_on_delete>true</remove_keywords_on_delete>
+	<recent_user_log_days>7</recent_user_log_days>
+	<syncs_db_driver>org.apache.derby.jdbc.EmbeddedDriver</syncs_db_driver>
+	<allow_nlst_empty>true</allow_nlst_empty>
+	<binary_mode_stor>false</binary_mode_stor>
+	<CustomForms type="vector"></CustomForms>
+	<auto_fix_stats_sessions>true</auto_fix_stats_sessions>
+	<password_reset_message>&lt;html&gt;&lt;body&gt;Your password reset can be completed by clicking the following URL.&lt;br&gt;&lt;br&gt;&lt;a href="{url}"&gt;{url}&lt;/a&gt; &lt;br&gt;&lt;br&gt;&lt;b&gt;This link will expire in 10 minutes.&lt;/b&gt;&lt;/body&gt;&lt;/html&gt;</password_reset_message>
+	<otp_url_verb>POST</otp_url_verb>
+	<listing_buffer_count>500</listing_buffer_count>
+	<resume_idle_job_delay>30</resume_idle_job_delay>
+	<serverbeat_ifup_command>/sbin/ifup</serverbeat_ifup_command>
+	<exif_listings>false</exif_listings>
+	<smtp_subject_encoded>false</smtp_subject_encoded>
+	<dmz_stat_caching>false</dmz_stat_caching>
+	<invalid_usernames_seconds_attempts>3</invalid_usernames_seconds_attempts>
+	<azure_upload_max_threads>2</azure_upload_max_threads>
+	<max_html5_pending_upload_chunks>11</max_html5_pending_upload_chunks>
+	<smtp_client_params></smtp_client_params>
+	<admin_ips>127.0.0.1,*</admin_ips>
+	<terrabytes_label_short>T</terrabytes_label_short>
+	<syncs_debug>true</syncs_debug>
+	<serverbeat_plumb>true</serverbeat_plumb>
+	<twofactor_secret_auto_otp_enable>false</twofactor_secret_auto_otp_enable>
+	<single_job_scheduler_serverbeat>true</single_job_scheduler_serverbeat>
+	<search_db_driver_file></search_db_driver_file>
+	<strip_slashes>false</strip_slashes>
+	<http_buffer>10</http_buffer>
+	<search_db_user>app</search_db_user>
+	<X-Frame-Options>SAMEORIGIN</X-Frame-Options>
+	<roll_log_size>10</roll_log_size>
+	<ssh_rename_overwrite>false</ssh_rename_overwrite>
+	<cookie_expire_hours>0</cookie_expire_hours>
+	<s3_threads_upload>3</s3_threads_upload>
+	<direct_link_to_webinterface>false</direct_link_to_webinterface>
+	<log_transfer_speeds>true</log_transfer_speeds>
+	<dmz_socket_pool_size>50</dmz_socket_pool_size>
+	<Strict-Transport-Security></Strict-Transport-Security>
+	<delete_threads>40</delete_threads>
+	<reset_token_timeout>10</reset_token_timeout>
+	<preview_configs type="vector">
+		<preview_configs_subitem type="properties">
+			<preview_reverseSubdirectories>true</preview_reverseSubdirectories>
+			<preview_working_dir></preview_working_dir>
+			<preview_debug>true</preview_debug>
+			<preview_movie_info_command_line></preview_movie_info_command_line>
+			<preview_command_line>convert -colorspace RGB -strip -alpha off -geometry %width%x%width% -quality 75 %src%[0] %dst%</preview_command_line>
+			<preview_exif>false</preview_exif>
+			<preview_file_extensions>.jpg, .jpeg, .gif, .png, .bmp, .pdf, .psd, .tif, .tiff, .zip</preview_file_extensions>
+			<preview_exif_get_command_line>exiftool -S %src%</preview_exif_get_command_line>
+			<preview_folder_list></preview_folder_list>
+			<preview_sizes type="vector">
+				<preview_sizes_subitem>80x80</preview_sizes_subitem>
+				<preview_sizes_subitem>160x160</preview_sizes_subitem>
+				<preview_sizes_subitem>800x800</preview_sizes_subitem>
+			</preview_sizes>
+			<preview_wait_timeout>600</preview_wait_timeout>
+			<preview_subdirectories>true</preview_subdirectories>
+			<preview_scan_interval>10</preview_scan_interval>
+			<preview_exif_set_command_line>exiftool -overwrite_original_in_place -%key%=%val% %src%</preview_exif_set_command_line>
+			<preview_frames>1</preview_frames>
+			<preview_conversion_threads>1</preview_conversion_threads>
+			<preview_enabled>false</preview_enabled>
+			<preview_environment>MAGICK_HOME=/Applications/ImageMagick-6.3.6/;DYLD_LIBRARY_PATH=/Applications/ImageMagick-6.3.6/lib;PATH=/opt/local/bin:/opt/local/sbin:/bin</preview_environment>
+		</preview_configs_subitem>
+	</preview_configs>
+	<allow_mlst>true</allow_mlst>
+	<search_db_pass></search_db_pass>
+	<disabled_ciphers>(TLS_RSA_WITH_AES_128_CBC_SHA)(TLS_RSA_WITH_AES_256_CBC_SHA)(TLS_DHE_RSA_WITH_AES_128_CBC_SHA)(TLS_DHE_RSA_WITH_AES_256_CBC_SHA)(SSL_RSA_WITH_3DES_EDE_CBC_SHA)(SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA)(SSL_RSA_WITH_DES_CBC_SHA)(SSL_DHE_RSA_WITH_DES_CBC_SHA)(SSL_RSA_EXPORT_WITH_RC4_40_MD5)(SSL_RSA_EXPORT_WITH_DES40_CBC_SHA)(SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA)(SSL_RSA_WITH_NULL_MD5)(SSL_RSA_WITH_NULL_SHA)(TLS_ECDH_ECDSA_WITH_NULL_SHA)(TLS_ECDH_RSA_WITH_NULL_SHA)(TLS_ECDHE_ECDSA_WITH_NULL_SHA)(TLS_ECDHE_RSA_WITH_NULL_SHA)(SSL_DH_anon_WITH_RC4_128_MD5)(TLS_DH_anon_WITH_AES_128_CBC_SHA)(TLS_DH_anon_WITH_AES_256_CBC_SHA)(SSL_DH_anon_WITH_3DES_EDE_CBC_SHA)(SSL_DH_anon_WITH_DES_CBC_SHA)(TLS_ECDH_anon_WITH_RC4_128_SHA)(TLS_ECDH_anon_WITH_AES_128_CBC_SHA)(TLS_ECDH_anon_WITH_AES_256_CBC_SHA)(TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA)(SSL_DH_anon_EXPORT_WITH_RC4_40_MD5)(SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA)(TLS_ECDH_anon_WITH_NULL_SHA)</disabled_ciphers>
+	<discover_ip_refresh>60</discover_ip_refresh>
+	<disable_mdtm_modifications>false</disable_mdtm_modifications>
+	<command_flush_interval>10</command_flush_interval>
+	<day_of_week_allow>1234567</day_of_week_allow>
+	<allow_directory_caching>false</allow_directory_caching>
+	<ui_save_preferences></ui_save_preferences>
+	<logging_provider></logging_provider>
+	<zip64_always>false</zip64_always>
+	<allow_auto_save>true</allow_auto_save>
+	<webdav_timezone>0</webdav_timezone>
+	<event_thread_timeout>60</event_thread_timeout>
+	<webinterface_redirect_with_password>true</webinterface_redirect_with_password>
+	<otp_password></otp_password>
+	<stats_update_transfers_ignore_size>update TRANSFERS set IGNORE_SIZE = 'Y' where SESSION_RID in (%sessions%) and START_TIME &gt; ?</stats_update_transfers_ignore_size>
+	<find_list_previews>true</find_list_previews>
+	<max_items_dir>-1</max_items_dir>
+	<lsla2>false</lsla2>
+	<login_page_list type="vector">
+		<login_page_list_subitem type="properties">
+			<page>login.html</page>
+			<domain>*</domain>
+		</login_page_list_subitem>
+	</login_page_list>
+	<previews_path>./</previews_path>
+	<domain_cookie></domain_cookie>
+	<event_asynch>false</event_asynch>
+	<send_dmz_error_events_to_internal>true</send_dmz_error_events_to_internal>
+	<login_hammer_timeout>0</login_hammer_timeout>
+	<http_chunk_temp_storage></http_chunk_temp_storage>
+	<allow_symlink_webinterface>false</allow_symlink_webinterface>
+	<logging_db_driver_file>./mysql-connector-java-5.0.4-bin.jar</logging_db_driver_file>
+	<ftp_cwd_validate>true</ftp_cwd_validate>
+	<serverbeat_ifdown_command>/sbin/ifdown</serverbeat_ifdown_command>
+	<proxyActivePorts>1025-65535</proxyActivePorts>
+	<allow_ssh_0_byte_file>true</allow_ssh_0_byte_file>
+	<validate_upload_physical_file_size_error>false</validate_upload_physical_file_size_error>
+	<recycle_path></recycle_path>
+	<stor_pooling>true</stor_pooling>
+	<stats_debug>true</stats_debug>
+	<test_proxy_dir>true</test_proxy_dir>
+	<ssh_comments>http://www.crushftp.com/</ssh_comments>
+	<strip_windows_domain_webdav>true</strip_windows_domain_webdav>
+	<sftp_mkdir_exist_silent>false</sftp_mkdir_exist_silent>
+	<hash_algorithm>MD5</hash_algorithm>
+	<search_db_query>SELECT * FROM SEARCH_INFO WHERE ITEM_PATH LIKE ?</search_db_query>
+	<validate_internal_share_username>false</validate_internal_share_username>
+	<sql_users_reset_cache_on_changes>true</sql_users_reset_cache_on_changes>
+	<generic_ftp_responses>false</generic_ftp_responses>
+	<stats_delete_transfers_time>DELETE FROM TRANSFERS WHERE START_TIME &lt; ?</stats_delete_transfers_time>
+	<mdtm_gmt>false</mdtm_gmt>
+	<uploaded_files>0</uploaded_files>
+	<log_roll_date_format>yyyyMMdd_HHmmss</log_roll_date_format>
+	<learning_proxy>false</learning_proxy>
+	<smtp_xoauth2>false</smtp_xoauth2>
+	<s3_threads_download>3</s3_threads_download>
+	<force_ipv4>false</force_ipv4>
+	<password_history_count>0</password_history_count>
+	<blank_passwords>false</blank_passwords>
+	<last_upload_wait>0</last_upload_wait>
+	<otp_url>https://{otp_username}:{otp_password}@api.twilio.com/2010-04-01/Accounts/{otp_username}/Messages.json</otp_url>
+	<s3_max_buffer_download>100</s3_max_buffer_download>
+	<job_scheduler_enabled>true</job_scheduler_enabled>
+	<search_db_driver>org.apache.derby.jdbc.EmbeddedDriver</search_db_driver>
+	<secondary_login_via_email_cache_interval>5</secondary_login_via_email_cache_interval>
+	<last_login_date_time>&lt;none&gt;</last_login_date_time>
+	<search_debug>true</search_debug>
+	<calculate_transfer_usage_listings>false</calculate_transfer_usage_listings>
+	<megabytes_label_short>M</megabytes_label_short>
+	<http_header20></http_header20>
+	<recent_job_days>7</recent_job_days>
+	<stats_db_user>app</stats_db_user>
+	<zipCompressionLevel>Best</zipCompressionLevel>
+	<crushftp_smtp_sasl>false</crushftp_smtp_sasl>
+	<dmz_upload_ack_socket>false</dmz_upload_ack_socket>
+	<file_encrypt_ascii>false</file_encrypt_ascii>
+	<smtp_ssl>false</smtp_ssl>
+	<stats_get_transfers_time>SELECT RID FROM TRANSFERS WHERE START_TIME &lt; ?</stats_get_transfers_time>
+	<replicated_auto_play_journal>true</replicated_auto_play_journal>
+	<http_header19></http_header19>
+	<http_header18></http_header18>
+	<http_header17></http_header17>
+	<ssh_disable_rsa_checks>false</ssh_disable_rsa_checks>
+	<http_header16></http_header16>
+	<http_header15></http_header15>
+	<http_header14></http_header14>
+	<http_header13></http_header13>
+	<http_header12></http_header12>
+	<logging_db_query>select LOG_DATA,LOG_MILLIS,LOG_ROW_NUM from CRUSHFTP_LOG where LOG_ROW_NUM &gt;= ? and LOG_ROW_NUM &lt;= ? order by LOG_ROW_NUM</logging_db_query>
+	<http_header11></http_header11>
+	<http_header10></http_header10>
+	<hammer_attempts_http>10000</hammer_attempts_http>
+	<log_ftp_client_listings>true</log_ftp_client_listings>
+	<chammer_banning>30</chammer_banning>
+	<stats_get_meta_info>select * from META_INFO where LOCATE(UPPER(ITEM_VALUE), UPPER(?)) &gt; 0</stats_get_meta_info>
+	<s3crush_replicated>true</s3crush_replicated>
+	<stats_db_pass></stats_db_pass>
+	<ip_restrictions type="vector">
+		<ip_restrictions_subitem type="properties">
+			<start_ip>0.0.0.0</start_ip>
+			<type>A</type>
+			<stop_ip>255.255.255.255</stop_ip>
+			<reason></reason>
+		</ip_restrictions_subitem>
+	</ip_restrictions>
+	<user_log_buffer>500</user_log_buffer>
+	<replicate_users>true</replicate_users>
+	<hide_email_password>false</hide_email_password>
+	<ban_timeout_http>5</ban_timeout_http>
+	<replicate_shares>true</replicate_shares>
+	<unsafe_filename_chars_rename></unsafe_filename_chars_rename>
+	<password_encryption>DES</password_encryption>
+	<block_access></block_access>
+	<http_header9></http_header9>
+	<http_header8></http_header8>
+	<emailReminderBodyText>Your password is : %user_pass%&#xD;
+&#xD;
+Requested from IP:%user_ip%</emailReminderBodyText>
+	<default_system_owner></default_system_owner>
+	<http_header7></http_header7>
+	<serverbeat_dmz_master>false</serverbeat_dmz_master>
+	<http_header6></http_header6>
+	<http_header5></http_header5>
+	<hammer_attempts>10000</hammer_attempts>
+	<http_header4></http_header4>
+	<http_header3></http_header3>
+	<http_header2></http_header2>
+	<http_header1></http_header1>
+	<secondary_login_via_email>false</secondary_login_via_email>
+	<fix_slashes>true</fix_slashes>
+	<csrf>true</csrf>
+	<ban_timeout>5</ban_timeout>
+	<fileDecryptionKeyPass></fileDecryptionKeyPass>
+	<alerts type="vector"></alerts>
+	<login_hammer_interval>30</login_hammer_interval>
+	<total_server_bytes_received>0K</total_server_bytes_received>
+	<password_reset_subject>Password Reset</password_reset_subject>
+	<count_dir_items>false</count_dir_items>
+	<job_max_runtime_minutes></job_max_runtime_minutes>
+	<proxyUploadRepository>./</proxyUploadRepository>
+	<stats_update_sessions>UPDATE SESSIONS set END_TIME = ? where RID = ?</stats_update_sessions>
+	<sort_listings>false</sort_listings>
+	<serverbeat_post_command></serverbeat_post_command>
+	<send_dot_dot_list_sftp>true</send_dot_dot_list_sftp>
+	<stop_listing_on_login_failure>true</stop_listing_on_login_failure>
+	<instant_chmod_chown_chgrp>false</instant_chmod_chown_chgrp>
+	<event_batching>true</event_batching>
+	<recycle>false</recycle>
+	<roll_log>true</roll_log>
+	<user_default_folder_privs>(read)(view)(resume)</user_default_folder_privs>
+	<dump_threads_log_interval>-1</dump_threads_log_interval>
+	<stats_insert_meta_info>INSERT INTO META_INFO (RID, SESSION_RID, TRANSFER_RID, ITEM_KEY, ITEM_VALUE) VALUES (?,?,?,?,?)</stats_insert_meta_info>
+	<temp_account_bad_timeout>30</temp_account_bad_timeout>
+	<binary_mode>false</binary_mode>
+	<expire_share_notify_days>0</expire_share_notify_days>
+	<log_roll_rename_hours>0</log_roll_rename_hours>
+	<lsla_year>false</lsla_year>
+	<zip_icon_preview_allowed>false</zip_icon_preview_allowed>
+	<emailReminderSubjectText>Password Reminder</emailReminderSubjectText>
+	<plugins type="vector">
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<version>4.0</version>
+				<debug>false</debug>
+				<enabled>false</enabled>
+				<usernames></usernames>
+				<pluginName>ContentBlocker</pluginName>
+				<dir_list></dir_list>
+				<subItem></subItem>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<debug>false</debug>
+				<device>auto</device>
+				<subItem></subItem>
+				<username_filter>*</username_filter>
+				<duo_host>api-XXXXXXXX.duosecurity.com</duo_host>
+				<ikey></ikey>
+				<event_only>false</event_only>
+				<enabled>false</enabled>
+				<version>8.1.0</version>
+				<pluginName>CrushDuo</pluginName>
+				<factor>auto</factor>
+				<crushduo_cahche_time>0</crushduo_cahche_time>
+				<fail_only_on_duo_deny>false</fail_only_on_duo_deny>
+				<skey></skey>
+				<server_item>All</server_item>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<user_multi_role_lookup>false</user_multi_role_lookup>
+				<homeDirectory>homeDirectory</homeDirectory>
+				<username_filter>*</username_filter>
+				<createFolder>true</createFolder>
+				<overwrite_vfs>true</overwrite_vfs>
+				<createHomeDirectory>false</createHomeDirectory>
+				<enabled>false</enabled>
+				<user_connection_groups>All</user_connection_groups>
+				<allow_forward>true</allow_forward>
+				<adminPassword>fakepassword</adminPassword>
+				<usernameTemplate></usernameTemplate>
+				<user_home_config type="properties">
+					<holder>true</holder>
+				</user_home_config>
+				<privs>(read)(write)(view)(delete)(deletedir)(makedir)(rename)(resume)</privs>
+				<acl_groups_command>cmd /c dsquery user -samid {username} | dsget user -memberof -expand | dsget group -samid</acl_groups_command>
+				<subItem></subItem>
+				<appendUsername>true</appendUsername>
+				<adminUsername>ldapSearch</adminUsername>
+				<randomize_home_name>false</randomize_home_name>
+				<create_local_user>false</create_local_user>
+				<allow_reverse>true</allow_reverse>
+				<acl_domain>local</acl_domain>
+				<groupquerydirect>false</groupquerydirect>
+				<auth_method>simple</auth_method>
+				<show_error_message>false</show_error_message>
+				<validate_before_other_plugins>false</validate_before_other_plugins>
+				<retry_fullusername_login>true</retry_fullusername_login>
+				<notify_email_cache_timeout>30</notify_email_cache_timeout>
+				<debug>false</debug>
+				<authenticationOnly>false</authenticationOnly>
+				<acceptAnyCert>false</acceptAnyCert>
+				<start_tls>false</start_tls>
+				<create_local_user_template></create_local_user_template>
+				<defaultDomain>uid=?,DC=domain,DC=com</defaultDomain>
+				<memberOf>member</memberOf>
+				<ldap_roles></ldap_roles>
+				<server_item>All</server_item>
+				<additional_paths></additional_paths>
+				<useLocalDirectory>false</useLocalDirectory>
+				<searchBase>DC=domain,DC=com</searchBase>
+				<notify_email_on_account_locked>false</notify_email_on_account_locked>
+				<acl_permissions>false</acl_permissions>
+				<cache_minutes>20</cache_minutes>
+				<key_mappings></key_mappings>
+				<simple_username_login_first>false</simple_username_login_first>
+				<timeout>30</timeout>
+				<follow_referral>follow</follow_referral>
+				<searchFilter>sAMAccountName</searchFilter>
+				<version>4.3.7</version>
+				<pluginName>CrushLDAPGroup</pluginName>
+				<UserHome></UserHome>
+				<ldapURL>ldap://ldap.company.com/</ldapURL>
+				<smb_permissions>false</smb_permissions>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<version>4.0.3</version>
+				<user></user>
+				<interval>60</interval>
+				<enabled>false</enabled>
+				<pass></pass>
+				<domain></domain>
+				<pluginName>CrushNoIP</pluginName>
+				<subItem></subItem>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<create_sql_dirs_needed>false</create_sql_dirs_needed>
+				<pluginName>CrushSQL</pluginName>
+				<db_url>jdbc:mysql://127.0.0.1:3306/crushftp?autoReconnect=true</db_url>
+				<delete_expired_accounts>false</delete_expired_accounts>
+				<db_user_query>select * from users &#xD;
+ where userName=? &#xD;
+ and userPass=? &#xD;
+ and (expireDate is null or expireDate &gt; ?)</db_user_query>
+				<db_drv_file>./mysql-connector-java-5.0.4-bin.jar</db_drv_file>
+				<create_sql_dirs>false</create_sql_dirs>
+				<version>4.3.5</version>
+				<templateUser>default</templateUser>
+				<sql_df>yyyy-MM-dd HH:mm:ss</sql_df>
+				<enabled>false</enabled>
+				<archive_path>/Archive/</archive_path>
+				<db_drv>org.gjt.mm.mysql.Driver</db_drv>
+				<dump_xml_user>false</dump_xml_user>
+				<subItem></subItem>
+				<db_expired_user_query>select * from users where (expireDate is not null and expireDate &lt; ?)</db_expired_user_query>
+				<server_item>All</server_item>
+				<debug>false</debug>
+				<db_user>CrushSQL</db_user>
+				<db_pass></db_pass>
+				<scan_interval>10</scan_interval>
+				<move_expired_accounts_filesystem>false</move_expired_accounts_filesystem>
+				<db_quota_query>update directories set quotaBytes = ? &#xD;
+ where id = ? and dirFTPPath = ? and dirName = ?</db_quota_query>
+				<db_user_list_query>select * from users</db_user_list_query>
+				<delete_expired_accounts_filesystem>false</delete_expired_accounts_filesystem>
+				<db_user_list_1_query>select * from users where userName=?</db_user_list_1_query>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<user_multi_role_lookup>false</user_multi_role_lookup>
+				<homeDirectory>homeDirectory</homeDirectory>
+				<createFolder>true</createFolder>
+				<createHomeDirectory>false</createHomeDirectory>
+				<enabled>false</enabled>
+				<user_connection_groups>All</user_connection_groups>
+				<allow_forward>true</allow_forward>
+				<adminPassword>fakepassword</adminPassword>
+				<usernameTemplate>default</usernameTemplate>
+				<user_home_config type="properties">
+					<holder>true</holder>
+				</user_home_config>
+				<privs>(read)(write)(view)(delete)(deletedir)(makedir)(rename)(resume)</privs>
+				<subItem></subItem>
+				<appendUsername>true</appendUsername>
+				<adminUsername>ldapSearch</adminUsername>
+				<randomize_home_name>false</randomize_home_name>
+				<create_local_user>false</create_local_user>
+				<allow_reverse>true</allow_reverse>
+				<groupquerydirect>false</groupquerydirect>
+				<auth_method>simple</auth_method>
+				<show_error_message>false</show_error_message>
+				<validate_before_other_plugins>false</validate_before_other_plugins>
+				<retry_fullusername_login>true</retry_fullusername_login>
+				<debug>false</debug>
+				<authenticationOnly>false</authenticationOnly>
+				<acceptAnyCert>false</acceptAnyCert>
+				<create_local_user_template></create_local_user_template>
+				<memberOf>member</memberOf>
+				<ldap_roles></ldap_roles>
+				<server_item>All</server_item>
+				<additional_paths></additional_paths>
+				<useLocalDirectory>false</useLocalDirectory>
+				<searchBase>DC=domain,DC=com</searchBase>
+				<key_mappings></key_mappings>
+				<simple_username_login_first>false</simple_username_login_first>
+				<follow_referral>follow</follow_referral>
+				<version>6.1</version>
+				<searchFilter>sAMAccountName</searchFilter>
+				<pluginName>CrushSSO</pluginName>
+				<UserHome></UserHome>
+				<ldapURL>ldap://ldap.company.com/</ldapURL>
+				<addon_privs>(share)(slideshow)</addon_privs>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<debug>false</debug>
+				<endPointPosition>300,300</endPointPosition>
+				<save_history>true</save_history>
+				<subItem></subItem>
+				<tasks></tasks>
+				<log_enabled>true</log_enabled>
+				<version>7.0</version>
+				<pluginName>CrushTask</pluginName>
+				<enabled>true</enabled>
+				<startPointPosition>100,100</startPointPosition>
+				<connections></connections>
+				<save_state>true</save_state>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<version>4.0</version>
+				<debug>false</debug>
+				<enabled>false</enabled>
+				<usernames></usernames>
+				<pluginName>DuplicateBlocker</pluginName>
+				<dir_list></dir_list>
+				<subItem></subItem>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<pluginName>HomeDirectory</pluginName>
+				<uniqueFolder>false</uniqueFolder>
+				<version>4.3.7</version>
+				<templateUser></templateUser>
+				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
+				<enabled>false</enabled>
+				<username_filter>*</username_filter>
+				<subItem></subItem>
+				<server_item>All</server_item>
+				<debug>false</debug>
+				<path></path>
+				<prependUsername>true</prependUsername>
+				<always_generate>false</always_generate>
+				<memory_only>false</memory_only>
+				<event_only>false</event_only>
+				<additional_paths></additional_paths>
+				<erase_home>false</erase_home>
+				<uniqueFolderFormat>_MM.dd.yyyy</uniqueFolderFormat>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<pluginName>MagicDirectory</pluginName>
+				<separator>--</separator>
+				<version>4.3.5e</version>
+				<email_body>Your account has been created.&#xD;
+Your username is:%user%&#xD;
+Your password is:%pass%</email_body>
+				<expireFormat>MMddyyyy</expireFormat>
+				<email_cc></email_cc>
+				<templateUser>default</templateUser>
+				<depths>1</depths>
+				<home_name></home_name>
+				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
+				<enabled>false</enabled>
+				<md5_password>false</md5_password>
+				<email_from></email_from>
+				<notify_email>true</notify_email>
+				<email_subject>CrushFTP account activated : %user%</email_subject>
+				<subItem></subItem>
+				<debug>false</debug>
+				<deleteAccount>false</deleteAccount>
+				<path></path>
+				<email>false</email>
+				<random_password>false</random_password>
+				<email_bcc></email_bcc>
+				<expiration>true</expiration>
+				<web_char>false</web_char>
+				<quota_all>false</quota_all>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<version>4.1</version>
+				<debug>false</debug>
+				<enabled>false</enabled>
+				<snapshots></snapshots>
+				<pluginName>PreferencesController</pluginName>
+				<actions></actions>
+				<subItem></subItem>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<pluginName>Radius</pluginName>
+				<createFolder>true</createFolder>
+				<retries>5</retries>
+				<remote_plugin_call>true</remote_plugin_call>
+				<version>4.2</version>
+				<nas_port>10</nas_port>
+				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
+				<enabled>false</enabled>
+				<timeout>1</timeout>
+				<authenticator>CHAPAuthenticator</authenticator>
+				<home_folder></home_folder>
+				<subItem></subItem>
+				<appendUsername>true</appendUsername>
+				<server_item>All</server_item>
+				<debug>false</debug>
+				<ldap_roles></ldap_roles>
+				<overwrite_vfs>true</overwrite_vfs>
+				<radius_port>1812</radius_port>
+				<usernameTemplate></usernameTemplate>
+				<shared_secret></shared_secret>
+				<authenticationOnly>false</authenticationOnly>
+				<useLocalDirectory>false</useLocalDirectory>
+				<radius_host>localhost</radius_host>
+				<additional_paths></additional_paths>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<idp_redirect_url></idp_redirect_url>
+				<user_multi_role_lookup>false</user_multi_role_lookup>
+				<saml_stream_cipher>AES/CBC/NoPadding</saml_stream_cipher>
+				<saml_sign_auth>false</saml_sign_auth>
+				<homeDirectory>homeDirectory</homeDirectory>
+				<remote_plugin_call>true</remote_plugin_call>
+				<createFolder>true</createFolder>
+				<saml_decryption_cipher>RSA</saml_decryption_cipher>
+				<overwrite_vfs>true</overwrite_vfs>
+				<saml_signing_cert></saml_signing_cert>
+				<name_id_format>unspecified</name_id_format>
+				<createHomeDirectory>false</createHomeDirectory>
+				<enabled>false</enabled>
+				<saml_group_name>group</saml_group_name>
+				<user_connection_groups>All</user_connection_groups>
+				<allow_forward>true</allow_forward>
+				<adminPassword>fakepassword</adminPassword>
+				<usernameTemplate>default</usernameTemplate>
+				<authenticator>CHAPAuthenticator</authenticator>
+				<user_home_config type="properties">
+					<holder>true</holder>
+				</user_home_config>
+				<privs>(read)(write)(view)(delete)(deletedir)(makedir)(rename)(resume)</privs>
+				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
+				<subItem></subItem>
+				<appendUsername>true</appendUsername>
+				<adminUsername>ldapSearch</adminUsername>
+				<randomize_home_name>false</randomize_home_name>
+				<create_local_user>false</create_local_user>
+				<allow_reverse>true</allow_reverse>
+				<groupquerydirect>false</groupquerydirect>
+				<auth_method>simple</auth_method>
+				<show_error_message>false</show_error_message>
+				<validate_before_other_plugins>false</validate_before_other_plugins>
+				<retry_fullusername_login>true</retry_fullusername_login>
+				<saml_decryption_keystore></saml_decryption_keystore>
+				<saml_audience>CrushFTP</saml_audience>
+				<debug>false</debug>
+				<compress_auth>false</compress_auth>
+				<authenticationOnly>false</authenticationOnly>
+				<acceptAnyCert>false</acceptAnyCert>
+				<create_local_user_template></create_local_user_template>
+				<saml_decryption_keystore_password></saml_decryption_keystore_password>
+				<memberOf>member</memberOf>
+				<ldap_roles></ldap_roles>
+				<server_item>All</server_item>
+				<additional_paths></additional_paths>
+				<saml_send_post>false</saml_send_post>
+				<useLocalDirectory>false</useLocalDirectory>
+				<searchBase>DC=domain,DC=com</searchBase>
+				<saml_issuer></saml_issuer>
+				<cache_minutes>20</cache_minutes>
+				<key_mappings></key_mappings>
+				<authentication_class>auto</authentication_class>
+				<saml_provider_url>http://www.okta.com/gdfhsdfcuhdbfgdfgdsh7</saml_provider_url>
+				<simple_username_login_first>false</simple_username_login_first>
+				<timeout>30</timeout>
+				<name_qualifier></name_qualifier>
+				<follow_referral>follow</follow_referral>
+				<version>6.1</version>
+				<saml_validate_signature>true</saml_validate_signature>
+				<searchFilter>sAMAccountName</searchFilter>
+				<return_url></return_url>
+				<pluginName>SAMLSSO</pluginName>
+				<UserHome></UserHome>
+				<ldapURL>ldap://ldap.company.com/</ldapURL>
+				<saml_decryption_key_password></saml_decryption_key_password>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<debug>false</debug>
+				<subItem></subItem>
+				<overwrite_vfs>true</overwrite_vfs>
+				<useLocalDirectory>false</useLocalDirectory>
+				<usernameTemplate></usernameTemplate>
+				<createFolder>true</createFolder>
+				<enabled>false</enabled>
+				<pluginName>SalesForce</pluginName>
+				<version>1.0</version>
+				<post_url>https://login.salesforce.com/services/oauth2/token</post_url>
+				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
+				<additional_paths></additional_paths>
+				<post_args>grant_type=password&amp;client_id=AAA&amp;client_secret=BBB&amp;username={username}&amp;password={password}</post_args>
+				<appendUsername>true</appendUsername>
+				<server_item>All</server_item>
+				<home_folder></home_folder>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<pluginName>SharedLogin</pluginName>
+				<createFolder>true</createFolder>
+				<method>POST</method>
+				<version>6.1</version>
+				<UserHome></UserHome>
+				<enabled>false</enabled>
+				<findBad>Sorry, but you do not have permission to view this content.</findBad>
+				<postParams>log={username}&amp;pwd={password}</postParams>
+				<subItem></subItem>
+				<appendUsername>true</appendUsername>
+				<server_item>All</server_item>
+				<loginGood>'result': true</loginGood>
+				<loginUrl>http://www.domain.com/subdomain/wp-login.php?login-with-ajax=login</loginUrl>
+				<debug>false</debug>
+				<testUrl>http://www.domain.com/subdomain/administrator/</testUrl>
+				<usernameTemplate>default</usernameTemplate>
+				<authenticationOnly>false</authenticationOnly>
+				<useLocalDirectory>true</useLocalDirectory>
+				<privs>(read)(write)(view)(delete)(deletedir)(makedir)(rename)(resume)</privs>
+				<findGood></findGood>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<user_multi_role_lookup>false</user_multi_role_lookup>
+				<homeDirectory>homeDirectory</homeDirectory>
+				<createFolder>true</createFolder>
+				<createHomeDirectory>false</createHomeDirectory>
+				<enabled>false</enabled>
+				<user_connection_groups>All</user_connection_groups>
+				<allow_forward>true</allow_forward>
+				<adminPassword>fakepassword</adminPassword>
+				<usernameTemplate>default</usernameTemplate>
+				<homeDirFields></homeDirFields>
+				<user_home_config type="properties">
+					<holder>true</holder>
+				</user_home_config>
+				<privs>(read)(write)(view)(delete)(deletedir)(makedir)(rename)(resume)</privs>
+				<subItem></subItem>
+				<appendUsername>true</appendUsername>
+				<adminUsername>ldapSearch</adminUsername>
+				<randomize_home_name>false</randomize_home_name>
+				<domain>doamin.local</domain>
+				<create_local_user>false</create_local_user>
+				<allow_reverse>true</allow_reverse>
+				<groupquerydirect>false</groupquerydirect>
+				<auth_method>simple</auth_method>
+				<sso_url></sso_url>
+				<show_error_message>false</show_error_message>
+				<validate_before_other_plugins>false</validate_before_other_plugins>
+				<retry_fullusername_login>true</retry_fullusername_login>
+				<debug>false</debug>
+				<authenticationOnly>false</authenticationOnly>
+				<acceptAnyCert>false</acceptAnyCert>
+				<create_local_user_template></create_local_user_template>
+				<memberOf>member</memberOf>
+				<ldap_roles></ldap_roles>
+				<server_item>All</server_item>
+				<additional_paths></additional_paths>
+				<useLocalDirectory>false</useLocalDirectory>
+				<searchBase>DC=domain,DC=com</searchBase>
+				<sharedSecret>quvKsbImBkU=</sharedSecret>
+				<cache_minutes>20</cache_minutes>
+				<key_mappings></key_mappings>
+				<timeout>30</timeout>
+				<simple_username_login_first>false</simple_username_login_first>
+				<follow_referral>follow</follow_referral>
+				<version>6.1</version>
+				<searchFilter>sAMAccountName</searchFilter>
+				<return_url>http://127.0.0.1:8080/</return_url>
+				<pluginName>UniSSO</pluginName>
+				<UserHome></UserHome>
+				<ldapURL>ldap://ldap.company.com/</ldapURL>
+				<addon_privs>(share)(slideshow)</addon_privs>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<method>GET</method>
+				<debug>false</debug>
+				<subItem></subItem>
+				<overwrite_vfs>true</overwrite_vfs>
+				<vfs_post_data></vfs_post_data>
+				<username>{username}</username>
+				<usernameTemplate></usernameTemplate>
+				<user_post_data></user_post_data>
+				<enabled>false</enabled>
+				<version>5.0.4</version>
+				<pluginName>WebApplication</pluginName>
+				<user_url>http://127.0.0.1/auth/user_properties.xml</user_url>
+				<vfs_url>http://127.0.0.1/auth/vfs_vectors.xml</vfs_url>
+				<permissions_url>http://127.0.0.1/auth/vfs_properties.xml</permissions_url>
+				<password>9vKKaAoAjpyMv5nTkghxIQ==</password>
+				<server_item>All</server_item>
+				<permissions_post_data></permissions_post_data>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+	</plugins>
+	<smtp_user></smtp_user>
+	<max_password_resets_per_minute>10</max_password_resets_per_minute>
+	<stop_dmz_ports_internal_down>true</stop_dmz_ports_internal_down>
+	<temp_account_share_web_css>true</temp_account_share_web_css>
+	<server_upload_queue_size_max>0</server_upload_queue_size_max>
+	<cban_timeout>5</cban_timeout>
+	<dmz_chunk_temp_storage>./dmz_tmp/</dmz_chunk_temp_storage>
+	<drop_folder_rename_new>false</drop_folder_rename_new>
+	<replicated_server_ips>*</replicated_server_ips>
+	<http_same_site>None</http_same_site>
+	<csrf_flipped>true</csrf_flipped>
+	<lowercase_all_s3_paths>false</lowercase_all_s3_paths>
+	<minimum_speed_warn_seconds>10</minimum_speed_warn_seconds>
+	<smtp_pass></smtp_pass>
+	<write_session_logs>true</write_session_logs>
+	<server_list type="vector">
+		<server_list_subitem type="properties">
+			<running>true</running>
+			<server_ip>auto</server_ip>
+			<proxy_header>false</proxy_header>
+			<connected_users>0</connected_users>
+			<linkedServer>MainUsers</linkedServer>
+			<ip>lookup</ip>
+			<enabled>true</enabled>
+			<require_encryption>false</require_encryption>
+			<ip_restrictions type="vector"></ip_restrictions>
+			<port>21</port>
+			<reverseProxyUrl></reverseProxyUrl>
+			<connection_number>0</connection_number>
+			<serverType>FTP</serverType>
+			<busyMessage></busyMessage>
+			<pasv_ports>2000-2010</pasv_ports>
+			<explicit_ssl>false</explicit_ssl>
+			<explicit_tls>false</explicit_tls>
+			<display>ftp://31.10.159.46/ is running, 0 users connected. Connections Processed : 0</display>
+			<ftp_aware_router>true</ftp_aware_router>
+			<reverseProxyPath></reverseProxyPath>
+			<reverseProxyDomain></reverseProxyDomain>
+		</server_list_subitem>
+		<server_list_subitem type="properties">
+			<linkedServer>MainUsers</linkedServer>
+			<new_http>true</new_http>
+			<proxy_header>false</proxy_header>
+			<port>8080</port>
+			<connected_users>1</connected_users>
+			<server_ip>auto</server_ip>
+			<explicit_ssl>true</explicit_ssl>
+			<ip_restrictions type="vector"></ip_restrictions>
+			<connection_number>82</connection_number>
+			<require_encryption>false</require_encryption>
+			<running>true</running>
+			<enabled>true</enabled>
+			<ip>lookup</ip>
+			<display>http://31.10.159.46:8080/ ( Web, WebDAV) is running, 1 users connected. Connections Processed : 82</display>
+			<explicit_tls>true</explicit_tls>
+			<serverType>HTTP</serverType>
+			<busyMessage></busyMessage>
+		</server_list_subitem>
+		<server_list_subitem type="properties">
+			<linkedServer>MainUsers</linkedServer>
+			<new_http>true</new_http>
+			<proxy_header>false</proxy_header>
+			<port>9090</port>
+			<connected_users>0</connected_users>
+			<server_ip>auto</server_ip>
+			<explicit_ssl>true</explicit_ssl>
+			<ip_restrictions type="vector"></ip_restrictions>
+			<connection_number>0</connection_number>
+			<require_encryption>false</require_encryption>
+			<running>true</running>
+			<enabled>true</enabled>
+			<ip>lookup</ip>
+			<display>http://31.10.159.46:9090/ ( Web, WebDAV) is running, 0 users connected. Connections Processed : 0</display>
+			<explicit_tls>true</explicit_tls>
+			<serverType>HTTP</serverType>
+			<busyMessage></busyMessage>
+		</server_list_subitem>
+		<server_list_subitem type="properties">
+			<linkedServer>MainUsers</linkedServer>
+			<new_http>true</new_http>
+			<proxy_header>false</proxy_header>
+			<port>443</port>
+			<connected_users>0</connected_users>
+			<server_ip>auto</server_ip>
+			<explicit_ssl>true</explicit_ssl>
+			<ip_restrictions type="vector"></ip_restrictions>
+			<connection_number>0</connection_number>
+			<require_encryption>false</require_encryption>
+			<running>true</running>
+			<enabled>true</enabled>
+			<ip>lookup</ip>
+			<display>https://31.10.159.46/ ( Web, WebDAV SSL ) is running, 0 users connected. Connections Processed : 0</display>
+			<explicit_tls>true</explicit_tls>
+			<serverType>HTTPS</serverType>
+			<busyMessage></busyMessage>
+		</server_list_subitem>
+		<server_list_subitem type="properties">
+			<proxy_header>false</proxy_header>
+			<ssh_local_port>45685</ssh_local_port>
+			<ssh_require_password>false</ssh_require_password>
+			<enabled>true</enabled>
+			<connected_users>0</connected_users>
+			<ssh_dsa_key>./ssh_host_dsa_key</ssh_dsa_key>
+			<ssh_rsa_key>./ssh_host_rsa_key</ssh_rsa_key>
+			<window_space>4096</window_space>
+			<ssh_auth_timeout>30</ssh_auth_timeout>
+			<ssh_keep_alive_interval>30</ssh_keep_alive_interval>
+			<display>sftp://31.10.159.46:2222/ ( SSH ) is running, 0 users connected. Connections Processed : 0</display>
+			<ssh_require_publickey>false</ssh_require_publickey>
+			<ftp_welcome_message></ftp_welcome_message>
+			<ssh_mac_list>hmac-sha256,hmac-sha2-256,hmac-sha256@ssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-256-96,hmac-sha512,hmac-sha2-512,hmac-sha512@ssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-512-96,hmac-sha1,hmac-sha1-etm@openssh.com,hmac-sha1-96,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-md5,hmac-md5-etm@openssh.com,hmac-md5-96</ssh_mac_list>
+			<ip>lookup</ip>
+			<ssh_connect_threads>2</ssh_connect_threads>
+			<ssh_text_encoding>UTF8</ssh_text_encoding>
+			<running>true</running>
+			<ssh_session_timeout>300</ssh_session_timeout>
+			<ssh_transfer_threads>2</ssh_transfer_threads>
+			<busyMessage></busyMessage>
+			<port>2222</port>
+			<ssh_cipher_list>aes128-ctr,aes192-ctr,aes256-ctr,3des-ctr,3des-cbc,blowfish-cbc,arcfour,arcfour128,arcfour256,aes128-gcm@openssh.com,aes256-gcm@openssh.com</ssh_cipher_list>
+			<max_async_req>200</max_async_req>
+			<max_packet_length>70000</max_packet_length>
+			<linkedServer>MainUsers</linkedServer>
+			<server_ip>auto</server_ip>
+			<ssh_dsa_enabled>true</ssh_dsa_enabled>
+			<min_dh_size>1024</min_dh_size>
+			<ssh_debug_log>false</ssh_debug_log>
+			<key_exchanges>curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256,diffie-hellman-group18-sha512,diffie-hellman-group17-sha512,diffie-hellman-group16-sha512,diffie-hellman-group15-sha512,diffie-hellman-group14-sha256,diffie-hellman-group14-sha1,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha1,rsa2048-sha256,rsa1024-sha1</key_exchanges>
+			<ssh_rsa_enabled>true</ssh_rsa_enabled>
+			<ssh_accept_threads>2</ssh_accept_threads>
+			<serverType>SFTP</serverType>
+			<connection_number>0</connection_number>
+			<ip_restrictions type="vector"></ip_restrictions>
+		</server_list_subitem>
+	</server_list>
+	<trusted_ip_parts>4</trusted_ip_parts>
+	<normalize_utf8>true</normalize_utf8>
+	<task_max_runtime_hours></task_max_runtime_hours>
+	<pgp_integrity_protect>false</pgp_integrity_protect>
+	<disable_referer_cookie>false</disable_referer_cookie>
+	<logging_db_driver>org.gjt.mm.mysql.Driver</logging_db_driver>
+	<otp_validated_logins>false</otp_validated_logins>
+	<extended_logging>false</extended_logging>
+	<recent_temp_job_log_days>7</recent_temp_job_log_days>
+	<login_custom_script></login_custom_script>
+	<event_reuse>true</event_reuse>
+	<task_max_runtime_minutes></task_max_runtime_minutes>
+	<stats_get_transfers_count_period>select count(TRANSFER_SIZE) from TRANSFERS t, SESSIONS s where DIRECTION = ? and (IGNORE_SIZE = 'N' or IGNORE_SIZE is null) and t.SESSION_RID = s.RID and USER_NAME = ? and t.START_TIME &gt;= ?</stats_get_transfers_count_period>
+	<sha3_keccak>false</sha3_keccak>
+	<server_download_queue_size_max>0</server_download_queue_size_max>
+	<synchronized_sftp>true</synchronized_sftp>
+	<proxyKeepDownloads>false</proxyKeepDownloads>
+	<fileDecryption>false</fileDecryption>
+	<smtp_client_secret></smtp_client_secret>
+	<file_transfer_mode>BINARY</file_transfer_mode>
+	<total_server_bytes_sent>0K</total_server_bytes_sent>
+	<allow_session_caching>true</allow_session_caching>
+	<ignore_web_anonymous>false</ignore_web_anonymous>
+	<expire_password_email_token_only>false</expire_password_email_token_only>
+	<search_file_contents_also>false</search_file_contents_also>
+	<beep_connect>false</beep_connect>
+	<syslog_protocol>udp</syslog_protocol>
+	<s3_use_contianer_credentials_relative_uri>false</s3_use_contianer_credentials_relative_uri>
+	<whitelist_web_commands>batchComplete,logout,getXMLListing</whitelist_web_commands>
+	<s3_sha256>false</s3_sha256>
+	<email_reset_token>false</email_reset_token>
+	<startup_delay>0</startup_delay>
+	<stats_db_driver_file></stats_db_driver_file>
+	<http_redirect_base>DISABLED</http_redirect_base>
+	<version>1.0</version>
+	<gigabytes_label_short>G</gigabytes_label_short>
+	<max_server_download_speed>0</max_server_download_speed>
+	<tunnels type="vector"></tunnels>
+	<encryption_pass_needed_test></encryption_pass_needed_test>
+	<phammer_attempts>15</phammer_attempts>
+	<registration_code>crushftp:(MAX=5)(V=5)</registration_code>
+	<auto_ip_discovery>true</auto_ip_discovery>
+	<securedelete>false</securedelete>
+	<replicated_vfs_ping_interval>60</replicated_vfs_ping_interval>
+	<ssh_runtime_exception>false</ssh_runtime_exception>
+	<allow_session_caching_on_exit>true</allow_session_caching_on_exit>
+	<proxy_socket_mode>passive</proxy_socket_mode>
+	<ignore_ssh_closefile_download_error>true</ignore_ssh_closefile_download_error>
+	<log_location>./CrushFTP.log</log_location>
+	<low_memory_trigger_value3>20</low_memory_trigger_value3>
+	<low_memory_trigger_value2>30</low_memory_trigger_value2>
+	<miniURLHost>http://www.domain.com:8080/</miniURLHost>
+	<low_memory_trigger_value1>40</low_memory_trigger_value1>
+	<search_max_content_kb>2</search_max_content_kb>
+	<multi_journal>false</multi_journal>
+	<always_validate_plugins_for_dmz_lookup>true</always_validate_plugins_for_dmz_lookup>
+	<syslog_encoding>UTF8</syslog_encoding>
+	<globalKeystoreCertPass>crushftp</globalKeystoreCertPass>
+	<smtp_helo_ip></smtp_helo_ip>
+	<filePublicEncryptionKey></filePublicEncryptionKey>
+	<prefs_version>7.0</prefs_version>
+	<case_sensitive_list_search>false</case_sensitive_list_search>
+	<rid>1608048486827</rid>
+	<smtp_client_action></smtp_client_action>
+	<stats_insert_transfers>INSERT INTO TRANSFERS (RID, SESSION_RID, START_TIME, DIRECTION, PATH, FILE_NAME, URL, SPEED, TRANSFER_SIZE, IGNORE_SIZE) VALUES (?,?,?,?,?,?,?,?,?,'N')</stats_insert_transfers>
+	<xmlUsers>true</xmlUsers>
+	<server_info_history_days>30</server_info_history_days>
+	<max_url_length>99999</max_url_length>
+	<single_report_scheduler_serverbeat>true</single_report_scheduler_serverbeat>
+	<update_proxy_user></update_proxy_user>
+	<dmz_log_in_internal_server>false</dmz_log_in_internal_server>
+	<log_debug_level>0</log_debug_level>
+	<bytes_label>Bytes</bytes_label>
+	<track_jobs_for_reports>false</track_jobs_for_reports>
+	<windows_character_encoding_process>windows-1252</windows_character_encoding_process>
+	<smtp_client_scope></smtp_client_scope>
+	<stats_min>10</stats_min>
+	<vfs_cache_enabled>false</vfs_cache_enabled>
+	<max_server_upload_speed>0</max_server_upload_speed>
+	<rnto_overwrite>false</rnto_overwrite>
+	<stats_get_max_transfers_rid>select max(RID) from TRANSFERS</stats_get_max_transfers_rid>
+	<smtp_client_id></smtp_client_id>
+	<serverbeat_unplumb>true</serverbeat_unplumb>
+	<syncs_delete_journal_expired>DELETE from FILE_JOURNAL where EVENT_TIME &lt; ?</syncs_delete_journal_expired>
+	<default_system_group></default_system_group>
+	<syncs_db_user>app</syncs_db_user>
+	<total_server_bytes_received_long>0</total_server_bytes_received_long>
+	<update_proxy_pass></update_proxy_pass>
+	<ignore_failed_directory_listings>false</ignore_failed_directory_listings>
+	<as2_sha256>sha-256</as2_sha256>
+	<failed_logins>0</failed_logins>
+	<store_job_items>true</store_job_items>
+	<search_db_insert>INSERT INTO SEARCH_INFO (ITEM_PATH, ITEM_TYPE, ITEM_SIZE, ITEM_MODIFIED, ITEM_KEYWORDS) VALUES (?,?,?,?,?)</search_db_insert>
+	<memcache>false</memcache>
+	<smtp_report_html>true</smtp_report_html>
+	<ssh_randomaccess>false</ssh_randomaccess>
+	<fips140_sftp_server>false</fips140_sftp_server>
+	<sftp_chunk_buffer>200</sftp_chunk_buffer>
+	<max_denied_ips>100</max_denied_ips>
+	<syncs_db_pass></syncs_db_pass>
+	<registration_name>crush</registration_name>
+	<job_statistics_enabled>false</job_statistics_enabled>
+	<reportSchedules type="vector"></reportSchedules>
+	<ignore_web_anonymous_proxy>false</ignore_web_anonymous_proxy>
+	<temp_account_share_web_buttons>true</temp_account_share_web_buttons>
+	<custom_delete_msg>"%user_the_command_data%" delete successful.</custom_delete_msg>
+	<replicated_vfs_url></replicated_vfs_url>
+	<roll_log_count>30</roll_log_count>
+	<logging_db_user>crushftp</logging_db_user>
+	<temp_accounts_path>./TempAccounts/</temp_accounts_path>
+	<http_session_timeout>60</http_session_timeout>
+	<stats_get_sessions_time>SELECT RID FROM SESSIONS WHERE START_TIME &lt; ?</stats_get_sessions_time>
+	<plugin_log_call>false</plugin_log_call>
+	<gigabytes_label>Giga</gigabytes_label>
+	<expire_emailed_passwords>false</expire_emailed_passwords>
+	<cert_path>builtin</cert_path>
+	<allow_local_ip_pasv_any>false</allow_local_ip_pasv_any>
+	<job_max_runtime_hours></job_max_runtime_hours>
+	<bytes_label_short>B</bytes_label_short>
+	<listing_multithreaded>false</listing_multithreaded>
+	<recursive_rename_event>false</recursive_rename_event>
+	<terrabytes_label>Terra</terrabytes_label>
+	<char_encoding>UTF-8</char_encoding>
+	<reverse_dns_user_ip>true</reverse_dns_user_ip>
+	<discovered_ip>31.10.159.46</discovered_ip>
+	<logging_db_pass></logging_db_pass>
+	<expired_accounts_notify_now>false</expired_accounts_notify_now>
+	<tls_version>SSLv2Hello,TLSv1,TLSv1.1,TLSv1.2</tls_version>
+	<stats_get_session_rid_sessions>select RID from SESSIONS where START_TIME &gt; ? and USER_NAME = ?</stats_get_session_rid_sessions>
+	<lowercase_usernames>false</lowercase_usernames>
+	<min_password_numbers>0</min_password_numbers>
+	<max_users>5</max_users>
+	<ftp_welcome_message>Welcome to CrushFTP!</ftp_welcome_message>
+	<syncs_get_journal>select * from FILE_JOURNAL where SYNC_ID = ? and RID &gt; ? and (CLIENTID &lt;&gt; ? or CLIENTID is null) order by RID</syncs_get_journal>
+	<file_client_not_found_error>true</file_client_not_found_error>
+	<audit_job_logs>false</audit_job_logs>
+	<otp_extra2></otp_extra2>
+	<zip64>false</zip64>
+	<otp_extra1></otp_extra1>
+	<debug_socks_log>false</debug_socks_log>
+	<min_password_specials>0</min_password_specials>
+	<otp_token_timeout>60000</otp_token_timeout>
+	<allow_zipstream>true</allow_zipstream>
+	<max_dmz_socket_idle_time>10000</max_dmz_socket_idle_time>
+	<default_title>CrushFTP WebInterface</default_title>
+	<temp_accounts_length>4</temp_accounts_length>
+	<block_hack_username_immediately>false</block_hack_username_immediately>
+	<default_logo>logo.png</default_logo>
+	<hban_timeout>1</hban_timeout>
+	<resolve_inheritance>true</resolve_inheritance>
+	<posix>true</posix>
+	<username_uppercase>false</username_uppercase>
+	<otp_post>To={otp_to}&amp;From={otp_from}&amp;Body={otp_token}</otp_post>
+	<block_bad_ftp_socket_paths>true</block_bad_ftp_socket_paths>
+	<run_alerts_dmz>false</run_alerts_dmz>
+	<syslog_port>1514</syslog_port>
+	<jailproxy>true</jailproxy>
+	<stats_get_transfers_sessions>select * from TRANSFERS where SESSION_RID in (%sessions%)</stats_get_transfers_sessions>
+	<server_download_queue_size>0</server_download_queue_size>
+	<max_connection_single_ip>100</max_connection_single_ip>
+	<ssh_encoding>UTF8</ssh_encoding>
+	<pasv_bind_all>false</pasv_bind_all>
+	<scan_vfs_for_initial_listing>true</scan_vfs_for_initial_listing>
+	<proxyKeepUploads>false</proxyKeepUploads>
+	<user_backup_count>100</user_backup_count>
+	<show_date_time>true</show_date_time>
+	<send_report_link>false</send_report_link>
+	<password_reset_message_browser>If your account was found, an email has been sent to you.  Follow the email's instructions.  The email's link will expire in 10 minutes.</password_reset_message_browser>
+	<max_event_threads>100</max_event_threads>
+	<last_download_wait>0</last_download_wait>
+	<recursive_delete_event>false</recursive_delete_event>
+	<socketpool_timeout>20</socketpool_timeout>
+	<allow_save_pass_phone>false</allow_save_pass_phone>
+	<registration_email>ftp</registration_email>
+	<chammer_attempts>10000</chammer_attempts>
+	<show_vfs_root_folders_mdtm>false</show_vfs_root_folders_mdtm>
+	<separate_speeds_by_username_ip>false</separate_speeds_by_username_ip>
+	<allow_filetree>true</allow_filetree>
+	<glaciercrush_replicated>true</glaciercrush_replicated>
+	<temp_account_share_web_forms>false</temp_account_share_web_forms>
+	<stats_delete_sessions_time>DELETE FROM SESSIONS WHERE START_TIME &lt; ?</stats_delete_sessions_time>
+	<allow_local_ip_pasv>true</allow_local_ip_pasv>
+	<sftp_recurse_delete>false</sftp_recurse_delete>
+	<dmzv3_two_sockets>false</dmzv3_two_sockets>
+	<slow_directory_scanners>true</slow_directory_scanners>
+	<filter_log_text></filter_log_text>
+	<smtp_server></smtp_server>
+	<login_footer></login_footer>
+	<kilobytes_label>Kilo</kilobytes_label>
+	<allow_memory_reload_of_users>true</allow_memory_reload_of_users>
+	<fileDecryptionKey></fileDecryptionKey>
+	<logging_db_query_count>select max(LOG_ROW_NUM) from CRUSHFTP_LOG</logging_db_query_count>
+	<create_home_folder>false</create_home_folder>
+	<event_empty_files>true</event_empty_files>
+	<deny_reserved_ports>true</deny_reserved_ports>
+	<multi_journal_timeout>30000</multi_journal_timeout>
+	<logging_db_insert>insert into CRUSHFTP_LOG (LOG_MILLIS,LOG_TAG,LOG_DATA,LOG_ROW_NUM) values(?,?,?,?)</logging_db_insert>
+	<acl_mode>2</acl_mode>
+	<search_db_delete>DELETE FROM SEARCH_INFO WHERE ITEM_PATH LIKE ?</search_db_delete>
+	<jobs_location>./</jobs_location>
+	<as2_mic_alg>optional, sha-256, sha1, md5</as2_mic_alg>
+	<relaxed_event_grouping>false</relaxed_event_grouping>
+	<replicate_reports>false</replicate_reports>
+	<hammer_banning_http>3</hammer_banning_http>
+	<stats_get_transfers_period>select sum(TRANSFER_SIZE) from TRANSFERS t, SESSIONS s where DIRECTION = ? and (IGNORE_SIZE = 'N' or IGNORE_SIZE is null) and t.SESSION_RID = s.RID and USER_NAME = ? and t.START_TIME &gt;= ?</stats_get_transfers_period>
+	<max_max_users>5</max_max_users>
+	<line_separator_crlf>false</line_separator_crlf>
+	<smtp_subject_utf8>true</smtp_subject_utf8>
+	<ssh_header>CrushFTPSSHD</ssh_header>
+	<ssh_bouncycastle>false</ssh_bouncycastle>
+	<min_password_length>3</min_password_length>
+	<crushauth_httponly>true</crushauth_httponly>
+	<s3_one_delete_attempt>false</s3_one_delete_attempt>
+	<include_ftp_nlst_path_for_all_pattern>false</include_ftp_nlst_path_for_all_pattern>
+	<display_alt_logo>false</display_alt_logo>
+	<recent_temp_job_days>7</recent_temp_job_days>
+	<share_expire_notify_task></share_expire_notify_task>
+	<filename_filters_str></filename_filters_str>
+	<ssh_bypass_jce2>false</ssh_bypass_jce2>
+	<email_templates type="vector">
+		<email_templates_subitem type="properties">
+			<emailBody>Your username is:{user_name}&lt;br&gt;Your password is:{user_pass}&lt;br&gt;</emailBody>
+			<name>New Account</name>
+			<emailSubject>New Account Information</emailSubject>
+		</email_templates_subitem>
+	</email_templates>
+	<log_allow_str>(GENERAL)(ERROR)(START)(STOP)(QUIT_SERVER)(RUN_SERVER)(KICK)(BAN)(DENIAL)(ACCEPT)(DISCONNECT)(USER)(PASS)(SYST)(NOOP)(SIZE)(MDTM)(RNFR)(RNTO)(PWD)(CWD)(TYPE)(REST)(DELE)(MKD)(RMD)(MACB)(ABOR)(RETR)(STOR)(APPE)(LIST)(NLST)(CDUP)(PASV)(PORT)(AUTH)(PBSZ)(PROT)(SITE)(QUIT)(GET)(PUT)(DELETE)(MOVE)(STAT)(HELP)(PAUSE_RESUME)(PROXY)(MLSD)(MLST)(EPSV)(EPRT)(OPTS)(POST)(WEBINTERFACE)(STOU)(DELETE)(MOVE)(PROPFIND)(MKCOL)(PUT)(LOCK)(MLSD)(MLST)</log_allow_str>
+	<proxy_list_max>0</proxy_list_max>
+	<search_index_interval>60</search_index_interval>
+	<password_reset_message_browser_bad>If your account was found, an email has been sent to you.  Follow the email's instructions.  The email's link will expire in 10 minutes.</password_reset_message_browser_bad>
+	<make_dir_uploads>false</make_dir_uploads>
+	<replicated_vfs_user></replicated_vfs_user>
+	<stats_get_max_sessions_rid>select max(RID) from SESSIONS</stats_get_max_sessions_rid>
+	<share_attached_file_size_limit>10</share_attached_file_size_limit>
+	<invalid_usernames_seconds>60</invalid_usernames_seconds>
+	<temp_account_pgp_settings>false</temp_account_pgp_settings>
+	<tunnel_minimum_version>3.4.0</tunnel_minimum_version>
+	<roll_daily_logs>true</roll_daily_logs>
+	<bandwidth_immune_ips></bandwidth_immune_ips>
+	<allow_symlink_checking>true</allow_symlink_checking>
+	<otp_numeric>false</otp_numeric>
+	<replicated_vfs_pass></replicated_vfs_pass>
+	<login_autocomplete_off>false</login_autocomplete_off>
+	<update_proxy_port></update_proxy_port>
+	<stats_delete_meta_transfers>DELETE FROM META_INFO WHERE TRANSFER_RID IN (%transfers%)</stats_delete_meta_transfers>
+	<miniURLs_dmz type="vector"></miniURLs_dmz>
+	<hack_usernames>administrator,admin,root</hack_usernames>
+	<fips140_sftp_client>false</fips140_sftp_client>
+	<stat_auto_increment>false</stat_auto_increment>
+	<http_header_timeout>30000</http_header_timeout>
+	<never_ban>127.0.0.1,10.*</never_ban>
+	<server_groups type="vector">
+		<server_groups_subitem>MainUsers</server_groups_subitem>
+	</server_groups>
+	<ssh_debug_logging></ssh_debug_logging>
+	<replicated_vfs_root_url></replicated_vfs_root_url>
+	<password_salt_location></password_salt_location>
+	<dmz_pong_timeout>20</dmz_pong_timeout>
+	<serverbeat_relative_timing>true</serverbeat_relative_timing>
+	<send_dot_dot_list_secure>true</send_dot_dot_list_secure>
+	<disconnect_ftp_on_socket_error>false</disconnect_ftp_on_socket_error>
+	<reverse_events>false</reverse_events>
+	<list_zip_app>true</list_zip_app>
+	<externalSqlUsers>false</externalSqlUsers>
+	<hammer_banning>10</hammer_banning>
+	<total_server_bytes_sent_long>0</total_server_bytes_sent_long>
+	<unsafe_filename_chars></unsafe_filename_chars>
+	<pban_timeout>0</pban_timeout>
+	<globalKeystorePass>crushftp</globalKeystorePass>
+	<customData type="properties"></customData>
+	<single_preview_serverbeat>false</single_preview_serverbeat>
+	<track_user_md4_hashes>false</track_user_md4_hashes>
+	<max_http_header_length>4000</max_http_header_length>
+	<temp_account_share_web_javascript>true</temp_account_share_web_javascript>
+	<encryption_cypher>CAST5</encryption_cypher>
+	<replicate_session_host_port></replicate_session_host_port>
+	<phammer_banning>30</phammer_banning>
+	<acl_lookup_tool>plugins/lib/aclchk.exe</acl_lookup_tool>
+	<temp_accounts_account_expire_task></temp_accounts_account_expire_task>
+	<localization>English</localization>
+	<server_start_message>CrushFTP Server Ready!</server_start_message>
+	<tls_version_client>SSLv2Hello,TLSv1,TLSv1.1,TLSv1.2</tls_version_client>
+	<sftp_round_seconds_up>true</sftp_round_seconds_up>
+	<last_login_user>&lt;none&gt;</last_login_user>
+	<smtp_html>true</smtp_html>
+	<trust_expired_client_cert>false</trust_expired_client_cert>
+	<serverbeat_command>/sbin/ifconfig</serverbeat_command>
+	<report_memory_protection>true</report_memory_protection>
+	<deny_localhost_admin>false</deny_localhost_admin>
+	<write_to_log>true</write_to_log>
+	<pgp_check_downloads>true</pgp_check_downloads>
+	<syslog_host>127.0.0.1</syslog_host>
+	<search_db_update>UPDATE SEARCH_INFO SET ITEM_SIZE = ?, ITEM_MODIFIED = ?, ITEM_KEYWORDS = ? WHERE ITEM_PATH = ?</search_db_update>
+	<smtp_from></smtp_from>
+	<azure_share_list_threads_count>10</azure_share_list_threads_count>
+	<change_remote_password>true</change_remote_password>
+	<kilobytes_label_short>K</kilobytes_label_short>
+	<disable_stats>false</disable_stats>
+	<report_prefix></report_prefix>
+	<downloaded_files>0</downloaded_files>
+	<Access-Control-Allow-Origin></Access-Control-Allow-Origin>
+	<deny_secure_active_mode>false</deny_secure_active_mode>
+	<allow_router_ban>false</allow_router_ban>
+	<test_vfs_return_error>false</test_vfs_return_error>
+	<track_last_logins>false</track_last_logins>
+	<restart_script></restart_script>
+	<stats_get_max_meta_info_rid>select max(RID) from META_INFO</stats_get_max_meta_info_rid>
+	<Content-Security-Policy></Content-Security-Policy>
+	<syncs_db_url>jdbc:derby:./syncsDB;create=true</syncs_db_url>
+	<make_upload_parent_folders>false</make_upload_parent_folders>
+	<allow_session_caching_memory>false</allow_session_caching_memory>
+	<recent_user_count>100</recent_user_count>
+	<min_password_uppers>0</min_password_uppers>
+	<webFooterText></webFooterText>
+	<validate_upload_physical_file_size>false</validate_upload_physical_file_size>
+	<min_password_lowers>0</min_password_lowers>
+	<banned_ip_message>Your IP is banned, no further requests will be processed from this IP</banned_ip_message>
+	<otp_from></otp_from>
+	<pgp_http_downloads_variable_size>false</pgp_http_downloads_variable_size>
+	<unsafe_password_chars>@#%/:\</unsafe_password_chars>
+	<syncs_insert_journal>INSERT INTO FILE_JOURNAL (RID, SYNC_ID, ITEM_PATH, EVENT_TYPE, EVENT_TIME, CLIENTID, PRIOR_MD5) VALUES (?,?,?,?,?,?,?)</syncs_insert_journal>
+	<user_log_location>./logs/session_logs/</user_log_location>
+	<search_db_url>jdbc:derby:./searchDB;create=true</search_db_url>
+	<limited_admin_custom_user_menu_actions>false</limited_admin_custom_user_menu_actions>
+	<fileEncryptionKey></fileEncryptionKey>
+	<fileEncryption>false</fileEncryption>
+	<search_index_usernames></search_index_usernames>
+	<http_server_header>CrushFTP HTTP Server</http_server_header>
+	<stats_session_days>90</stats_session_days>
+	<acl_cache_timeout>60</acl_cache_timeout>
+	<update_proxy_type></update_proxy_type>
+	<encryption_pass_needed>false</encryption_pass_needed>
+	<vfs_cache_interval>60</vfs_cache_interval>
+	<successful_logins>7</successful_logins>
+	<temp_account_share_web_customizations>true</temp_account_share_web_customizations>
+	<max_threads>2000</max_threads>
+	<check_all_recursive_deletes>false</check_all_recursive_deletes>
+	<sync_history_days>30</sync_history_days>
+	<epsveprt>true</epsveprt>
+	<merge_events>false</merge_events>
+	<tunnels_dmz type="vector"></tunnels_dmz>
+	<total_server_bytes_transfered>0K</total_server_bytes_transfered>
+	<s3_ignore_partial>false</s3_ignore_partial>
+	<dmz_memory_queue>20</dmz_memory_queue>
+	<login_hammer_attempts>60</login_hammer_attempts>
+	<direct_link_access>false</direct_link_access>
+	<allow_x_forwarded_host>true</allow_x_forwarded_host>
+	<tunnel_ram_cache>128</tunnel_ram_cache>
+	<memory_log_interval>600</memory_log_interval>
+	<replicate_jobs>true</replicate_jobs>
+	<stats_db_driver>org.apache.derby.jdbc.EmbeddedDriver</stats_db_driver>
+	<otp_username></otp_username>
+	<log_roll_time>00:00</log_roll_time>
+	<syncs_db_driver_file></syncs_db_driver_file>
+	<miniURLs type="vector"></miniURLs>
+	<recent_job_log_days>7</recent_job_log_days>
+	<exif_keywords>false</exif_keywords>
+	<client_cert_auth>true</client_cert_auth>
+	<stats_insert_sessions>INSERT INTO SESSIONS (RID, SESSION, SERVER_GROUP, USER_NAME, START_TIME, END_TIME, SUCCESS_LOGIN, IP) VALUES (?,?,?,?,?,?,?,?)</stats_insert_sessions>
+	<deny_fxp>false</deny_fxp>
+	<limited_admin_vfs_overwrite>true</limited_admin_vfs_overwrite>
+	<server_upload_queue_size>0</server_upload_queue_size>
+	<random_password_length>6</random_password_length>
+	<ssl_renegotiation_blocked>true</ssl_renegotiation_blocked>
+	<s3_buffer>5</s3_buffer>
+	<log_date_format>MM/dd/yyyy HH:mm:ss.SSS</log_date_format>
+	<geoip_access_key></geoip_access_key>
+	<proxyDownloadRepository>./</proxyDownloadRepository>
+	<v10_beta>false</v10_beta>
+	<max_job_summary_scan>300</max_job_summary_scan>
+	<webinterface_show_password_rule>true</webinterface_show_password_rule>
+	<monitored_folders type="vector"></monitored_folders>
+	<hide_ftp_quota_log>false</hide_ftp_quota_log>
+	<include_ftp_nlst_path>false</include_ftp_nlst_path>
+	<stats_transfer_days>90</stats_transfer_days>
+	<webdav_agent_learning>true</webdav_agent_learning>
+	<logging_db_url>jdbc:mysql://127.0.0.1:3306/crushftp?autoReconnect=true</logging_db_url>
+	<newversion>true</newversion>
+	<rfc_proxy>false</rfc_proxy>
+	<stats_get_transfers_download>select count(*) from TRANSFERS where DIRECTION = 'DOWNLOAD' and SESSION_RID in (select RID from SESSIONS where USER_NAME = ?)</stats_get_transfers_download>
+	<expired_passwords_notify_now>false</expired_passwords_notify_now>
+	<login_header></login_header>
+	<sql_prefix></sql_prefix>
+	<allow_gzip>true</allow_gzip>
+	<web404Text>The selected resource was not found.</web404Text>
+	<search_keywords_also>true</search_keywords_also>
+	<smtp_start_tls_allowed>true</smtp_start_tls_allowed>
+	<update_proxy_host></update_proxy_host>
+	<fips140>false</fips140>
+	<delete_partial_uploads>false</delete_partial_uploads>
+	<html5_chunk_timeout>600</html5_chunk_timeout>
+	<thread_dump_delayed_login>false</thread_dump_delayed_login>
+	<item name="7_token_proxy">false</item>
+	<last_login_ip>&lt;none&gt;</last_login_ip>
+	<needClientAuth>false</needClientAuth>
+	<smtp_client_url></smtp_client_url>
+	<block_client_renegotiation>true</block_client_renegotiation>
+	<save_temp_bans>false</save_temp_bans>
+</server_prefs>
+

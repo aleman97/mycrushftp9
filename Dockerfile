@@ -5,6 +5,7 @@ LABEL maintainer "Alessandro Servino, alessandro.servino@ti8m.ch"
 ADD ./CrushFTP9 /var/opt/CrushFTP9
 ADD ./setup.sh /var/opt/setup.sh
 ADD ./crushftp_init.sh /var/opt/crushftp_init.sh
+ADD ./mysql-connector-java-5.1.47-bin.jar /var/opt/CrushFTP9/mysql-connector-java-5.1.47-bin.jar
 
 
 RUN	chmod +x /var/opt/crushftp_init.sh && \

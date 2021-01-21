@@ -1,0 +1,2 @@
+docker build -t aleman97/mycrushftp9:4.3 .
+docker run -d --name crushftp -v my-crushftp-volume-2:/var/opt/CrushFTP9/users/MainUsers -p 8080:8080 -p 21:21 aleman97/mycrushftp9:4.3

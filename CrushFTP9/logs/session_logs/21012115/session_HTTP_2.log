@@ -1,0 +1,364 @@
+SESSION|01/21/2021 15:36:19.783|[HTTP:2_57984:lookup:8080] Accepting connection from: 172.17.0.1:57984
+SESSION|01/21/2021 15:36:19.979|[HTTP:2_57984_pda::172.17.0.1] READ: *GET / HTTP/1.1*
+SESSION|01/21/2021 15:36:19.980|[HTTP:2_57984_pda::172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:19.980|[HTTP:2_57984_pda::172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:19.980|[HTTP:2_57984_pda::172.17.0.1] READ: *Sec-Fetch-Site: none*
+SESSION|01/21/2021 15:36:19.981|[HTTP:2_57984_pda::172.17.0.1] READ: *Sec-Fetch-Mode: navigate*
+SESSION|01/21/2021 15:36:19.981|[HTTP:2_57984_pda::172.17.0.1] READ: *Sec-Fetch-User: ?1*
+SESSION|01/21/2021 15:36:19.981|[HTTP:2_57984_pda::172.17.0.1] READ: *Sec-Fetch-Dest: document*
+SESSION|01/21/2021 15:36:20.318|[HTTP:2_57984::172.17.0.1] WROTE: *HTTP/1.0 302 Redirect*
+SESSION|01/21/2021 15:36:20.320|[HTTP:2_57984::172.17.0.1] WROTE: *location: /WebInterface/login.html*
+SESSION|01/21/2021 15:36:20.328|[2_57984::172.17.0.1] *Disconnected:*
+SESSION|01/21/2021 15:36:20.866|[HTTP:2_57986:lookup:8080] Accepting connection from: 172.17.0.1:57986
+SESSION|01/21/2021 15:36:20.869|[HTTP:2_57984_yW8:anonymous:172.17.0.1] READ: *GET / HTTP/1.1*
+SESSION|01/21/2021 15:36:20.870|[HTTP:2_57984_yW8:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:20.870|[HTTP:2_57984_yW8:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:20.871|[HTTP:2_57984_yW8:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: none*
+SESSION|01/21/2021 15:36:20.871|[HTTP:2_57984_yW8:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: navigate*
+SESSION|01/21/2021 15:36:20.872|[HTTP:2_57984_yW8:anonymous:172.17.0.1] READ: *Sec-Fetch-User: ?1*
+SESSION|01/21/2021 15:36:20.873|[HTTP:2_57984_yW8:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: document*
+SESSION|01/21/2021 15:36:20.972|[HTTP:2_57986:anonymous:172.17.0.1] WROTE: *HTTP/1.1 200 OK*
+SESSION|01/21/2021 15:36:21.148|[HTTP:2_57984_HJy:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/css/crushFtp.framework.css HTTP/1.1*
+SESSION|01/21/2021 15:36:21.154|[HTTP:2_58008:lookup:8080] Accepting connection from: 172.17.0.1:58008
+SESSION|01/21/2021 15:36:21.170|[HTTP:2_57984_bhE:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/css/menuIcons.css HTTP/1.1*
+SESSION|01/21/2021 15:36:21.182|[HTTP:2_58016:lookup:8080] Accepting connection from: 172.17.0.1:58016
+SESSION|01/21/2021 15:36:21.186|[HTTP:2_58008:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.200|[HTTP:2_58020:lookup:8080] Accepting connection from: 172.17.0.1:58020
+SESSION|01/21/2021 15:36:21.201|[HTTP:2_57984_ZKK:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/jquery-ui-1.12.1/jquery-ui.min.css HTTP/1.1*
+SESSION|01/21/2021 15:36:21.220|[HTTP:2_58020:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.220|[HTTP:2_57986:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.227|[HTTP:2_58014:lookup:8080] Accepting connection from: 172.17.0.1:58014
+SESSION|01/21/2021 15:36:21.231|[HTTP:2_57984_brB:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/css/jquery.colorbox.css HTTP/1.1*
+SESSION|01/21/2021 15:36:21.241|[HTTP:2_58016:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.248|[HTTP:2_58024:lookup:8080] Accepting connection from: 172.17.0.1:58024
+SESSION|01/21/2021 15:36:21.257|[HTTP:2_57984_tZZ:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/css/token-input-facebook.css HTTP/1.1*
+SESSION|01/21/2021 15:36:21.259|[HTTP:2_57984_Wwt:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/SCEditor-2.1.3/themes/default.min.css HTTP/1.1*
+SESSION|01/21/2021 15:36:21.263|[HTTP:2_57984_qib:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/video-js/video-js.css HTTP/1.1*
+SESSION|01/21/2021 15:36:21.266|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.268|[HTTP:2_57986:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.279|[HTTP:2_57984_tgn:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/chosen/chosen.min.css HTTP/1.1*
+SESSION|01/21/2021 15:36:21.280|[HTTP:2_58020:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.284|[HTTP:2_57984_diP:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/css/jquery.cluetip.css HTTP/1.1*
+SESSION|01/21/2021 15:36:21.284|[HTTP:2_58008:anonymous:172.17.0.1] WROTE: *HTTP/1.1 200 OK*
+SESSION|01/21/2021 15:36:21.290|[HTTP:2_58016:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.290|[HTTP:2_58014:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.298|[HTTP:2_57984_zOw:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/audio-js/audio-js.css HTTP/1.1*
+SESSION|01/21/2021 15:36:21.303|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.319|[2_58008:anonymous:172.17.0.1] *Disconnected:null*
+SESSION|01/21/2021 15:36:21.323|[HTTP:2_57984_hEt:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/audio-js/skins/vim.css HTTP/1.1*
+SESSION|01/21/2021 15:36:21.332|[HTTP:2_57984_xKo:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/css/localFileBrowser.css HTTP/1.1*
+SESSION|01/21/2021 15:36:21.332|[HTTP:2_57984_PNF:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/DND/css/jquery.fileupload-ui.css HTTP/1.1*
+SESSION|01/21/2021 15:36:21.344|[HTTP:2_57986:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.346|[HTTP:2_58020:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.349|[HTTP:2_57984_Zl9:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/jQuery/jquery.Electron.Inject.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.351|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.353|[HTTP:2_58014:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.355|[HTTP:2_57984_Rog:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/h5utils.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.357|[HTTP:2_58016:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.371|[HTTP:2_58028:lookup:8080] Accepting connection from: 172.17.0.1:58028
+SESSION|01/21/2021 15:36:21.373|[HTTP:2_57984_Foz:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/jQuery/jquery-3.5.1.min.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.375|[HTTP:2_58028:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.396|[HTTP:2_57984_kTl:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/jQuery/jquery-migrate-3.0.0.min.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.399|[HTTP:2_57986:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.407|[HTTP:2_57984_cwS:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/jQueryRotate.2.2.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.407|[HTTP:2_57984_Ioy:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/jquery-ui-1.12.1/jquery-ui.min.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.411|[HTTP:2_58020:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.429|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.430|[HTTP:2_57984_z7f:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/crushftp.dragout.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.430|[HTTP:2_57984_XhT:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/jQuery/jquery-migrate-1.4.1.min.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.434|[HTTP:2_58028:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.430|[HTTP:2_57984_PqQ:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/jquery.blockUI.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.437|[HTTP:2_58014:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.440|[HTTP:2_58016:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.446|[HTTP:2_57984_AQF:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/jquery.idle-timer.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.448|[HTTP:2_57986:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.456|[HTTP:2_57984_Qka:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/jQuery.cookie.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.458|[HTTP:2_58020:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.475|[HTTP:2_57984_JiJ:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/WIInitVars.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.478|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.482|[HTTP:2_57984_BjU:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/WICustomizations.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.489|[HTTP:2_57984_wWy:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/jqueryFileTree.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.493|[HTTP:2_57984_Gch:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/WICommonMethods.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.494|[HTTP:2_57984_5Yi:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/jquery.contextmenu.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.495|[HTTP:2_58014:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.495|[HTTP:2_57986:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.507|[HTTP:2_57984_kLe:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/jquery.cluetip.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.507|[HTTP:2_58028:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.509|[HTTP:2_58020:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.525|[HTTP:2_57984_y1s:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/jquery.xml2json.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.527|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.531|[HTTP:2_58016:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.544|[HTTP:2_57984_oQQ:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/jquery.meio.mask.min.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.546|[HTTP:2_57984_G4n:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/jquery.cssRule.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.548|[HTTP:2_57986:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.549|[HTTP:2_58014:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.566|[HTTP:2_57984_UVs:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/jquery.doubleTap.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.566|[HTTP:2_57984_123:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/jquery.colorbox.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.567|[HTTP:2_58028:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.569|[HTTP:2_58020:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.574|[HTTP:2_57984_Qdx:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/mimeTypes.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.581|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.582|[HTTP:2_57984_9ih:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/crushFTP.folderPreview.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.584|[HTTP:2_58016:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.593|[HTTP:2_57984_0zt:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/jquery.metadata.v2.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.599|[HTTP:2_57984_7TR:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/jquery.media.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.600|[HTTP:2_58014:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.602|[HTTP:2_57986:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.613|[HTTP:2_57984_vtG:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/crushftp.sessionChecker.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.620|[HTTP:2_57984_K8D:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/browserSelector.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.622|[HTTP:2_58028:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.623|[HTTP:2_58020:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.626|[HTTP:2_57984_UlF:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/jquery.tokeninput.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.629|[HTTP:2_57984_9Aj:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/jquery.notify.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.631|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.632|[HTTP:2_58016:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.647|[HTTP:2_57984_pgv:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/jquery.titlealert.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.649|[HTTP:2_57984_aLO:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/date.format.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.650|[HTTP:2_58014:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.651|[HTTP:2_57986:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.685|[HTTP:2_57984_oOF:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/jquery-ui-timepicker-addon.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.687|[HTTP:2_57984_QgA:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/browser.notification.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.689|[HTTP:2_57984_t7J:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/jquery.multiFieldExtender-2.0.min.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.693|[HTTP:2_58016:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.705|[HTTP:2_57984_zz8:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/SCEditor-2.1.3/jquery.sceditor.bbcode.min.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.707|[HTTP:2_57984_Twu:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/crush.Notify.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.709|[HTTP:2_58014:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.709|[HTTP:2_57984_dOB:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/chosen/chosen.jquery.min.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.711|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.720|[HTTP:2_58020:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.720|[HTTP:2_57986:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.724|[HTTP:2_58028:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.756|[HTTP:2_57984_mn5:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/video-js/video.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.766|[HTTP:2_57984_6D7:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/audio-js/audio.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.776|[HTTP:2_58014:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.779|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.785|[HTTP:2_57984_uxT:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/menuIcons.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.786|[HTTP:2_57984_8mN:anonymous:172.17.0.1] READ: *GET /WebInterface/localizations/en.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.788|[HTTP:2_58028:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.791|[HTTP:2_58020:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.792|[HTTP:2_57984_zCq:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/wavesurfer.min.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.793|[HTTP:2_58016:anonymous:172.17.0.1] WROTE: *HTTP/1.1 404 Not Found*
+SESSION|01/21/2021 15:36:21.795|[HTTP:2_57986:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.797|[HTTP:2_58016:anonymous:172.17.0.1] WROTE: *The selected resource was not found.*
+SESSION|01/21/2021 15:36:21.822|[HTTP:2_57984_2Fb:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/js/init.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.823|[HTTP:2_58014:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.832|[HTTP:2_57984_HPW:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/DND/js/tmpl.min.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.834|[HTTP:2_57984_9Mg:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/DND/js/load-image.min.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.838|[HTTP:2_57984_dZA:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/DND/js/jquery.fileupload.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.841|[HTTP:2_58028:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.842|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.842|[HTTP:2_58020:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.844|[HTTP:2_57984_Mn3:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/DND/js/jquery.iframe-transport.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.848|[HTTP:2_57986:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.850|[HTTP:2_57984_4UX:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/DND/js/jquery.fileupload-ui.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.852|[HTTP:2_58016:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.868|[HTTP:2_57984_MNP:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/DND/js/jquery.fileupload-CrushFTP-ui.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.871|[HTTP:2_58014:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.891|[HTTP:2_57984_TN2:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/DND/js/crushftp.DNDUpload.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.893|[HTTP:2_57984_t8J:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/DND/js/crushftp.DNDWebInterface.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.892|[HTTP:2_57984_7Rj:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/crushftp.WI.FileBrowser.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.901|[HTTP:2_57984_1Qc:anonymous:172.17.0.1] READ: *GET /WebInterface/Resources/js/jquery.UI.ComboBox.js HTTP/1.1*
+SESSION|01/21/2021 15:36:21.903|[HTTP:2_58028:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.903|[HTTP:2_57986:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.904|[HTTP:2_58020:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:21.906|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:22.018|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *HTTP/1.1 404 Not Found*
+SESSION|01/21/2021 15:36:22.021|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *The selected resource was not found.*
+SESSION|01/21/2021 15:36:22.374|[HTTP:2_57984_x2I:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.374|[HTTP:2_57984_x2I:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.375|[HTTP:2_57984_x2I:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.375|[HTTP:2_57984_x2I:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.376|[HTTP:2_57984_x2I:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.377|[HTTP:2_57984_x2I:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.379|[HTTP:2_57984_nEP:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.379|[HTTP:2_57984_nEP:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.379|[HTTP:2_57984_nEP:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.380|[HTTP:2_57984_nEP:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.381|[HTTP:2_57984_nEP:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.381|[HTTP:2_57984_nEP:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.382|[HTTP:2_57984_nEP:anonymous:172.17.0.1] READ: *command:getUsername*
+SESSION|01/21/2021 15:36:22.382|[HTTP:2_57984_nEP:anonymous:172.17.0.1] READ: *random:0.5617902967333739*
+SESSION|01/21/2021 15:36:22.383|[HTTP:2_57984_nEP:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.383|[HTTP:2_57984_qaQ:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.383|[HTTP:2_57984_qaQ:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.383|[HTTP:2_57984_qaQ:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.384|[HTTP:2_57984_qaQ:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.384|[HTTP:2_57984_qaQ:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.384|[HTTP:2_57984_qaQ:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.384|[HTTP:2_57984_qaQ:anonymous:172.17.0.1] READ: *command:getUserInfo*
+SESSION|01/21/2021 15:36:22.385|[HTTP:2_57984_qaQ:anonymous:172.17.0.1] READ: *path:/*
+SESSION|01/21/2021 15:36:22.385|[HTTP:2_57984_qaQ:anonymous:172.17.0.1] READ: *random:0.3379611182020681*
+SESSION|01/21/2021 15:36:22.385|[HTTP:2_57984_qaQ:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.386|[2_57986:anonymous:172.17.0.1] *Disconnected:null*
+SESSION|01/21/2021 15:36:22.387|[HTTP:2_58020:anonymous:172.17.0.1] WROTE: *HTTP/1.1 200 OK*
+SESSION|01/21/2021 15:36:22.398|[HTTP:2_57984_x2I:anonymous:172.17.0.1] READ: *command:getUsername*
+SESSION|01/21/2021 15:36:22.398|[HTTP:2_57984_x2I:anonymous:172.17.0.1] READ: *random:0.561192431948121*
+SESSION|01/21/2021 15:36:22.398|[HTTP:2_57984_x2I:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.399|[HTTP:2_58024:anonymous:172.17.0.1] WROTE: *HTTP/1.1 200 OK*
+SESSION|01/21/2021 15:36:22.402|[HTTP:2_57984_kDV:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.405|[HTTP:2_57984_kDV:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.405|[HTTP:2_57984_kDV:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.405|[HTTP:2_57984_kDV:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.405|[HTTP:2_57984_kDV:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.405|[HTTP:2_57984_kDV:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.406|[HTTP:2_57984_kDV:anonymous:172.17.0.1] READ: *command:getUserInfo*
+SESSION|01/21/2021 15:36:22.406|[HTTP:2_57984_kDV:anonymous:172.17.0.1] READ: *path:/*
+SESSION|01/21/2021 15:36:22.407|[HTTP:2_57984_kDV:anonymous:172.17.0.1] READ: *random:0.3379611182020681*
+SESSION|01/21/2021 15:36:22.410|[HTTP:2_57984_kDV:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.411|[2_58028:anonymous:172.17.0.1] *Disconnected:null*
+SESSION|01/21/2021 15:36:22.418|[HTTP:2_57984_2xV:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.422|[HTTP:2_57984_2xV:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.423|[HTTP:2_57984_2xV:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.423|[HTTP:2_57984_2xV:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.423|[HTTP:2_57984_2xV:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.423|[HTTP:2_57984_2xV:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.424|[HTTP:2_57984_2xV:anonymous:172.17.0.1] READ: *command:getUserInfo*
+SESSION|01/21/2021 15:36:22.424|[HTTP:2_57984_2xV:anonymous:172.17.0.1] READ: *path:/*
+SESSION|01/21/2021 15:36:22.424|[HTTP:2_57984_2xV:anonymous:172.17.0.1] READ: *random:0.3379611182020681*
+SESSION|01/21/2021 15:36:22.425|[HTTP:2_57984_2xV:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.426|[2_58020:anonymous:172.17.0.1] *Disconnected:null*
+SESSION|01/21/2021 15:36:22.433|[HTTP:2_57984_IL1:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.435|[HTTP:2_57984_IL1:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.435|[HTTP:2_57984_IL1:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.436|[HTTP:2_57984_IL1:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.444|[HTTP:2_57984_IL1:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.445|[HTTP:2_57984_IL1:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.445|[HTTP:2_57984_IL1:anonymous:172.17.0.1] READ: *command:getUserInfo*
+SESSION|01/21/2021 15:36:22.445|[HTTP:2_57984_IL1:anonymous:172.17.0.1] READ: *path:/*
+SESSION|01/21/2021 15:36:22.446|[HTTP:2_57984_IL1:anonymous:172.17.0.1] READ: *random:0.3379611182020681*
+SESSION|01/21/2021 15:36:22.446|[HTTP:2_57984_IL1:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.446|[2_58024:anonymous:172.17.0.1] *Disconnected:null*
+SESSION|01/21/2021 15:36:22.452|[HTTP:2_57984_uu7:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.452|[HTTP:2_57984_uu7:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.452|[HTTP:2_57984_uu7:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.452|[HTTP:2_57984_uu7:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.452|[HTTP:2_57984_uu7:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.452|[HTTP:2_57984_uu7:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.453|[HTTP:2_57984_uu7:anonymous:172.17.0.1] READ: *command:getUserInfo*
+SESSION|01/21/2021 15:36:22.453|[HTTP:2_57984_uu7:anonymous:172.17.0.1] READ: *path:/*
+SESSION|01/21/2021 15:36:22.453|[HTTP:2_57984_uu7:anonymous:172.17.0.1] READ: *random:0.3379611182020681*
+SESSION|01/21/2021 15:36:22.453|[HTTP:2_57984_uu7:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.454|[2_58014:anonymous:172.17.0.1] *Disconnected:null*
+SESSION|01/21/2021 15:36:22.461|[HTTP:2_57984_zLD:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.461|[HTTP:2_57984_zLD:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.461|[HTTP:2_57984_zLD:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.462|[HTTP:2_57984_zLD:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.462|[HTTP:2_57984_zLD:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.462|[HTTP:2_57984_zLD:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.463|[HTTP:2_57984_zLD:anonymous:172.17.0.1] READ: *command:getUserInfo*
+SESSION|01/21/2021 15:36:22.463|[HTTP:2_57984_zLD:anonymous:172.17.0.1] READ: *path:/*
+SESSION|01/21/2021 15:36:22.463|[HTTP:2_57984_zLD:anonymous:172.17.0.1] READ: *random:0.3379611182020681*
+SESSION|01/21/2021 15:36:22.463|[HTTP:2_57984_zLD:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.465|[2_58016:anonymous:172.17.0.1] *Disconnected:null*
+SESSION|01/21/2021 15:36:22.473|[HTTP:2_58040:lookup:8080] Accepting connection from: 172.17.0.1:58040
+SESSION|01/21/2021 15:36:22.474|[HTTP:2_57984_JJ9:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.474|[HTTP:2_57984_JJ9:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.475|[HTTP:2_57984_JJ9:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.475|[HTTP:2_57984_JJ9:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.475|[HTTP:2_57984_JJ9:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.475|[HTTP:2_57984_JJ9:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.476|[HTTP:2_57984_JJ9:anonymous:172.17.0.1] READ: *command:getUserInfo*
+SESSION|01/21/2021 15:36:22.476|[HTTP:2_57984_JJ9:anonymous:172.17.0.1] READ: *path:/*
+SESSION|01/21/2021 15:36:22.476|[HTTP:2_57984_JJ9:anonymous:172.17.0.1] READ: *random:0.3379611182020681*
+SESSION|01/21/2021 15:36:22.476|[HTTP:2_57984_JJ9:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.478|[2_58040:anonymous:172.17.0.1] *Disconnected:null*
+SESSION|01/21/2021 15:36:22.613|[HTTP:2_58044:lookup:8080] Accepting connection from: 172.17.0.1:58044
+SESSION|01/21/2021 15:36:22.613|[HTTP:2_57984_SXN:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.613|[HTTP:2_57984_SXN:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.613|[HTTP:2_57984_SXN:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.613|[HTTP:2_57984_SXN:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.614|[HTTP:2_57984_SXN:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.614|[HTTP:2_57984_SXN:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.614|[HTTP:2_57984_SXN:anonymous:172.17.0.1] READ: *command:getUserInfo*
+SESSION|01/21/2021 15:36:22.614|[HTTP:2_57984_SXN:anonymous:172.17.0.1] READ: *path:*
+SESSION|01/21/2021 15:36:22.615|[HTTP:2_57984_SXN:anonymous:172.17.0.1] READ: *random:0.16327225444862004*
+SESSION|01/21/2021 15:36:22.615|[HTTP:2_57984_SXN:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.616|[2_58044:anonymous:172.17.0.1] *Disconnected:null*
+SESSION|01/21/2021 15:36:22.691|[HTTP:2_58048:lookup:8080] Accepting connection from: 172.17.0.1:58048
+SESSION|01/21/2021 15:36:22.696|[HTTP:2_57984_VXr:anonymous:172.17.0.1] READ: *GET /WebInterface/jQuery/images/check.png HTTP/1.1*
+SESSION|01/21/2021 15:36:22.706|[HTTP:2_58052:lookup:8080] Accepting connection from: 172.17.0.1:58052
+SESSION|01/21/2021 15:36:22.707|[HTTP:2_57984_ztr:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.707|[HTTP:2_57984_ztr:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.708|[HTTP:2_57984_ztr:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.709|[HTTP:2_57984_ztr:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.710|[HTTP:2_57984_ztr:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.711|[HTTP:2_57984_ztr:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.718|[HTTP:2_57984_ztr:anonymous:172.17.0.1] READ: *command:getUserInfo*
+SESSION|01/21/2021 15:36:22.718|[HTTP:2_57984_ztr:anonymous:172.17.0.1] READ: *path:*
+SESSION|01/21/2021 15:36:22.718|[HTTP:2_57984_ztr:anonymous:172.17.0.1] READ: *random:0.9859960689839928*
+SESSION|01/21/2021 15:36:22.726|[HTTP:2_58048:anonymous:172.17.0.1] WROTE: *HTTP/1.1 200 OK*
+SESSION|01/21/2021 15:36:22.727|[HTTP:2_58048:anonymous:172.17.0.1] WROTE: *Transfer-Encoding: chunked*
+SESSION|01/21/2021 15:36:22.728|[HTTP:2_58048:anonymous:172.17.0.1] WROTE: *Vary: Accept-Encoding*
+SESSION|01/21/2021 15:36:22.732|[HTTP:2_58048:anonymous:172.17.0.1] WROTE: *Content-Encoding: gzip*
+SESSION|01/21/2021 15:36:22.742|[HTTP:2_58056:lookup:8080] Accepting connection from: 172.17.0.1:58056
+SESSION|01/21/2021 15:36:22.744|[HTTP:2_57984_5Tj:anonymous:172.17.0.1] READ: *GET /favicon.ico HTTP/1.1*
+SESSION|01/21/2021 15:36:22.744|[HTTP:2_57984_5Tj:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.744|[HTTP:2_57984_5Tj:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.744|[HTTP:2_57984_5Tj:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.744|[HTTP:2_57984_5Tj:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: no-cors*
+SESSION|01/21/2021 15:36:22.745|[HTTP:2_57984_5Tj:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: image*
+SESSION|01/21/2021 15:36:22.745|[HTTP:2_57984_5Tj:anonymous:172.17.0.1] READ: *GET /favicon.ico HTTP/1.1*
+SESSION|01/21/2021 15:36:22.746|[HTTP:2_58056:anonymous:172.17.0.1] WROTE: *HTTP/1.1 200 OK*
+SESSION|01/21/2021 15:36:22.746|[HTTP:2_58056:anonymous:172.17.0.1] WROTE: *Transfer-Encoding: chunked*
+SESSION|01/21/2021 15:36:22.751|[HTTP:2_58056:anonymous:172.17.0.1] WROTE: *Vary: Accept-Encoding*
+SESSION|01/21/2021 15:36:22.751|[HTTP:2_58056:anonymous:172.17.0.1] WROTE: *Content-Encoding: gzip*
+SESSION|01/21/2021 15:36:22.763|[HTTP:2_57984_ztr:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.766|[2_58052:anonymous:172.17.0.1] *Disconnected:null*
+SESSION|01/21/2021 15:36:22.792|[HTTP:2_57984_lRm:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.792|[HTTP:2_57984_lRm:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.792|[HTTP:2_57984_lRm:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.793|[HTTP:2_57984_lRm:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.793|[HTTP:2_57984_lRm:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.793|[HTTP:2_57984_lRm:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.794|[HTTP:2_57984_lRm:anonymous:172.17.0.1] READ: *command:getUserInfo*
+SESSION|01/21/2021 15:36:22.794|[HTTP:2_57984_lRm:anonymous:172.17.0.1] READ: *path:*
+SESSION|01/21/2021 15:36:22.794|[HTTP:2_57984_lRm:anonymous:172.17.0.1] READ: *random:0.9512207685717602*
+SESSION|01/21/2021 15:36:22.794|[HTTP:2_57984_lRm:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.795|[2_58056:anonymous:172.17.0.1] *Disconnected:null*
+SESSION|01/21/2021 15:36:22.802|[HTTP:2_57984_4cw:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.803|[HTTP:2_57984_4cw:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.804|[HTTP:2_57984_4cw:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.804|[HTTP:2_57984_4cw:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.804|[HTTP:2_57984_4cw:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.805|[HTTP:2_57984_4cw:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.805|[HTTP:2_57984_4cw:anonymous:172.17.0.1] READ: *command:getUserInfo*
+SESSION|01/21/2021 15:36:22.805|[HTTP:2_57984_4cw:anonymous:172.17.0.1] READ: *path:*
+SESSION|01/21/2021 15:36:22.805|[HTTP:2_57984_4cw:anonymous:172.17.0.1] READ: *random:0.9512207685717602*
+SESSION|01/21/2021 15:36:22.806|[HTTP:2_57984_4cw:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.806|[2_58048:anonymous:172.17.0.1] *Disconnected:null*
+SESSION|01/21/2021 15:36:22.814|[HTTP:2_58060:lookup:8080] Accepting connection from: 172.17.0.1:58060
+SESSION|01/21/2021 15:36:22.814|[HTTP:2_57984_opQ:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.814|[HTTP:2_57984_opQ:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.814|[HTTP:2_57984_opQ:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.815|[HTTP:2_57984_opQ:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.815|[HTTP:2_57984_opQ:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.815|[HTTP:2_57984_opQ:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.815|[HTTP:2_57984_opQ:anonymous:172.17.0.1] READ: *command:getUserInfo*
+SESSION|01/21/2021 15:36:22.816|[HTTP:2_57984_opQ:anonymous:172.17.0.1] READ: *path:*
+SESSION|01/21/2021 15:36:22.816|[HTTP:2_57984_opQ:anonymous:172.17.0.1] READ: *random:0.9512207685717602*
+SESSION|01/21/2021 15:36:22.816|[HTTP:2_57984_opQ:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.817|[2_58060:anonymous:172.17.0.1] *Disconnected:null*
+SESSION|01/21/2021 15:36:22.857|[HTTP:2_58064:lookup:8080] Accepting connection from: 172.17.0.1:58064
+SESSION|01/21/2021 15:36:22.858|[HTTP:2_57984_LEq:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.858|[HTTP:2_57984_LEq:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.858|[HTTP:2_57984_LEq:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.858|[HTTP:2_57984_LEq:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.858|[HTTP:2_57984_LEq:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.858|[HTTP:2_57984_LEq:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.859|[HTTP:2_57984_LEq:anonymous:172.17.0.1] READ: *command:getUserInfo*
+SESSION|01/21/2021 15:36:22.859|[HTTP:2_57984_LEq:anonymous:172.17.0.1] READ: *path:*
+SESSION|01/21/2021 15:36:22.859|[HTTP:2_57984_LEq:anonymous:172.17.0.1] READ: *random:0.5889353273332296*
+SESSION|01/21/2021 15:36:22.859|[HTTP:2_57984_LEq:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.860|[2_58064:anonymous:172.17.0.1] *Disconnected:null*
+SESSION|01/21/2021 15:36:22.893|[HTTP:2_58068:lookup:8080] Accepting connection from: 172.17.0.1:58068
+SESSION|01/21/2021 15:36:22.894|[HTTP:2_57984_GFk:anonymous:172.17.0.1] READ: *POST /WebInterface/function/ HTTP/1.1*
+SESSION|01/21/2021 15:36:22.895|[HTTP:2_57984_GFk:anonymous:172.17.0.1] READ: *sec-ch-ua: "Google Chrome";v="87", " Not;A Brand";v="99", "Chromium";v="87"*
+SESSION|01/21/2021 15:36:22.895|[HTTP:2_57984_GFk:anonymous:172.17.0.1] READ: *sec-ch-ua-mobile: ?0*
+SESSION|01/21/2021 15:36:22.895|[HTTP:2_57984_GFk:anonymous:172.17.0.1] READ: *Sec-Fetch-Site: same-origin*
+SESSION|01/21/2021 15:36:22.896|[HTTP:2_57984_GFk:anonymous:172.17.0.1] READ: *Sec-Fetch-Mode: cors*
+SESSION|01/21/2021 15:36:22.896|[HTTP:2_57984_GFk:anonymous:172.17.0.1] READ: *Sec-Fetch-Dest: empty*
+SESSION|01/21/2021 15:36:22.900|[HTTP:2_57984_GFk:anonymous:172.17.0.1] READ: *command:logout*
+SESSION|01/21/2021 15:36:22.900|[HTTP:2_57984_GFk:anonymous:172.17.0.1] READ: *random:0.07341283166237433*
+SESSION|01/21/2021 15:36:22.900|[HTTP:2_57984_GFk:anonymous:172.17.0.1] READ: *c2f:nqLC*
+SESSION|01/21/2021 15:36:22.916|[HTTP:2_58068:anonymous:172.17.0.1] WROTE: *HTTP/1.1 200 OK*
+SESSION|01/21/2021 15:36:22.924|[2_58068:anonymous:172.17.0.1] *Disconnected:*

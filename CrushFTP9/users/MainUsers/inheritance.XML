@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inheritance type="properties">
+	<admin type="vector"></admin>
+	<ale type="vector"></ale>
+	<default type="vector"></default>
+	<TempAccount type="vector"></TempAccount>
+	<fadmin type="vector"></fadmin>
+</inheritance>
+

@@ -20,7 +20,7 @@
 		<db_user_web_customizations_insert>INSERT INTO WEB_CUSTOMIZATIONS (USERID,SQL_FIELD_KEY,SQL_FIELD_VALUE,SORT_ORDER) VALUES(?,?,?,?)</db_user_web_customizations_insert>
 		<db_groups_delete>DELETE FROM GROUPS WHERE SERVER_GROUP=?</db_groups_delete>
 		<db_user_vfs_delete>DELETE FROM VFS WHERE USERID=?</db_user_vfs_delete>
-		<db_user>TOBESUBSTITUTED</db_user>
+		<db_user>crushftp</db_user>
 		<db_user_domain_root_list_id_query>SELECT * FROM DOMAIN_ROOT_LIST WHERE USERID=?</db_user_domain_root_list_id_query>
 		<db_user_properties_insert>INSERT INTO USER_PROPERTIES (USERID,PROP_NAME,PROP_VALUE) VALUES(?,?,?)</db_user_properties_insert>
 		<db_user_vfs_permissions_insert>INSERT INTO VFS_PERMISSIONS (USERID,PATH,PRIVS) VALUES(?,?,?)</db_user_vfs_permissions_insert>
@@ -35,32 +35,32 @@
 		<db_user_events_delete>DELETE FROM EVENTS5 WHERE USERID=?</db_user_events_delete>
 		<db_user_update>UPDATE USERS SET USERNAME=?, PASSWORD=? WHERE UPPER(USERNAME)=UPPER(?) AND SERVER_GROUP=?</db_user_update>
 		<db_user_inheritance_id_query>SELECT * FROM INHERITANCE WHERE USERID=?</db_user_inheritance_id_query>
-		<db_driver_file>./mysql-connector-java-5.1.47-bin.jar</db_driver_file>
+		<db_driver_file>./mysql-connector-java-5.0.4-bin.jar</db_driver_file>
 		<db_user_web_buttons_delete>DELETE FROM WEB_BUTTONS WHERE USERID=?</db_user_web_buttons_delete>
-		<db_user_vfs_properties_delete>DELETE FROM VFS_PROPERTIES WHERE USERID=?</db_user_vfs_properties_delete>
 		<db_user_delete>DELETE FROM USERS WHERE UPPER(USERNAME)=UPPER(?) AND SERVER_GROUP=?</db_user_delete>
+		<db_user_vfs_properties_delete>DELETE FROM VFS_PROPERTIES WHERE USERID=?</db_user_vfs_properties_delete>
 		<db_mysql_groups_compatibility>true</db_mysql_groups_compatibility>
 		<db_user_properties_query>SELECT * FROM USER_PROPERTIES WHERE USERID=?</db_user_properties_query>
 		<db_user_inheritance_query>SELECT * FROM INHERITANCE WHERE SERVER_GROUP=?</db_user_inheritance_query>
 		<db_modified_delete>DELETE FROM MODIFIED_TIMES WHERE SERVER_GROUP=? AND PROP_NAME=?</db_modified_delete>
-		<db_user_vfs_permissions_id_query>SELECT * FROM VFS_PERMISSIONS WHERE USERID=?</db_user_vfs_permissions_id_query>
 		<db_user_ip_restrictions_insert>INSERT INTO IP_RESTRICTIONS (USERID,START_IP,TYPE,STOP_IP,SORT_ORDER) VALUES(?,?,?,?,?)</db_user_ip_restrictions_insert>
+		<db_user_vfs_permissions_id_query>SELECT * FROM VFS_PERMISSIONS WHERE USERID=?</db_user_vfs_permissions_id_query>
 		<db_user_query>SELECT * FROM USERS WHERE SERVER_GROUP=? and UPPER(USERNAME)=UPPER(?)</db_user_query>
+		<db_pass></db_pass>
 		<db_user_web_customizations_id_query>SELECT * FROM WEB_CUSTOMIZATIONS WHERE USERID=?</db_user_web_customizations_id_query>
-		<db_pass>TOBESUBSTITUTED</db_pass>
 		<db_groups_insert>INSERT INTO GROUPS (GROUPNAME, USERID, SERVER_GROUP) VALUES(?,?,?)</db_groups_insert>
 		<db_user_vfs_insert>INSERT INTO VFS (USERID,URL,TYPE,PATH,SORT_ORDER) VALUES(?,?,?,?,?)</db_user_vfs_insert>
 		<db_user_web_customizations_delete>DELETE FROM WEB_CUSTOMIZATIONS WHERE USERID=?</db_user_web_customizations_delete>
 		<db_user_vfs_vdir_insert>INSERT INTO VFS (USERID,URL,TYPE,PATH,SORT_ORDER) VALUES(?,?,?,?,?)</db_user_vfs_vdir_insert>
-		<db_url>jdbc:mysql://database:3306/crushftp9?autoReconnect=true</db_url>
-		<db_user_vfs_permissions_query>SELECT * FROM VFS_PERMISSIONS WHERE USERID=?</db_user_vfs_permissions_query>
+		<db_url>jdbc:mysql://127.0.0.1:3306/crushftp?autoReconnect=true</db_url>
 		<db_user_properties_delete>DELETE FROM USER_PROPERTIES WHERE USERID=?</db_user_properties_delete>
+		<db_user_vfs_permissions_query>SELECT * FROM VFS_PERMISSIONS WHERE USERID=?</db_user_vfs_permissions_query>
 		<db_user_vfs_permissions_delete>DELETE FROM VFS_PERMISSIONS WHERE USERID=?</db_user_vfs_permissions_delete>
-		<db_user_ip_restrictions_id_query>SELECT * FROM IP_RESTRICTIONS WHERE USERID=?</db_user_ip_restrictions_id_query>
 		<db_users_query>SELECT * FROM USERS WHERE SERVER_GROUP=? order by USERNAME</db_users_query>
+		<db_user_ip_restrictions_id_query>SELECT * FROM IP_RESTRICTIONS WHERE USERID=?</db_user_ip_restrictions_id_query>
 	</sqlItems>
-	<proxyRules type="vector"></proxyRules>
 	<syncs_delete_journal>DELETE from FILE_JOURNAL where RID = ?</syncs_delete_journal>
+	<proxyRules type="vector"></proxyRules>
 	<minimum_speed_alert_seconds>30</minimum_speed_alert_seconds>
 	<webdav_agents></webdav_agents>
 	<stats_db_url>jdbc:derby:./statsDB;create=true</stats_db_url>
@@ -93,8 +93,8 @@
 	<single_job_scheduler_serverbeat>true</single_job_scheduler_serverbeat>
 	<search_db_driver_file></search_db_driver_file>
 	<strip_slashes>false</strip_slashes>
-	<http_buffer>10</http_buffer>
 	<search_db_user>app</search_db_user>
+	<http_buffer>10</http_buffer>
 	<X-Frame-Options>SAMEORIGIN</X-Frame-Options>
 	<roll_log_size>10</roll_log_size>
 	<ssh_rename_overwrite>false</ssh_rename_overwrite>
@@ -132,8 +132,8 @@
 			<preview_environment>MAGICK_HOME=/Applications/ImageMagick-6.3.6/;DYLD_LIBRARY_PATH=/Applications/ImageMagick-6.3.6/lib;PATH=/opt/local/bin:/opt/local/sbin:/bin</preview_environment>
 		</preview_configs_subitem>
 	</preview_configs>
-	<allow_mlst>true</allow_mlst>
 	<search_db_pass></search_db_pass>
+	<allow_mlst>true</allow_mlst>
 	<disabled_ciphers>(TLS_RSA_WITH_AES_128_CBC_SHA)(TLS_RSA_WITH_AES_256_CBC_SHA)(TLS_DHE_RSA_WITH_AES_128_CBC_SHA)(TLS_DHE_RSA_WITH_AES_256_CBC_SHA)(SSL_RSA_WITH_3DES_EDE_CBC_SHA)(SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA)(SSL_RSA_WITH_DES_CBC_SHA)(SSL_DHE_RSA_WITH_DES_CBC_SHA)(SSL_RSA_EXPORT_WITH_RC4_40_MD5)(SSL_RSA_EXPORT_WITH_DES40_CBC_SHA)(SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA)(SSL_RSA_WITH_NULL_MD5)(SSL_RSA_WITH_NULL_SHA)(TLS_ECDH_ECDSA_WITH_NULL_SHA)(TLS_ECDH_RSA_WITH_NULL_SHA)(TLS_ECDHE_ECDSA_WITH_NULL_SHA)(TLS_ECDHE_RSA_WITH_NULL_SHA)(SSL_DH_anon_WITH_RC4_128_MD5)(TLS_DH_anon_WITH_AES_128_CBC_SHA)(TLS_DH_anon_WITH_AES_256_CBC_SHA)(SSL_DH_anon_WITH_3DES_EDE_CBC_SHA)(SSL_DH_anon_WITH_DES_CBC_SHA)(TLS_ECDH_anon_WITH_RC4_128_SHA)(TLS_ECDH_anon_WITH_AES_128_CBC_SHA)(TLS_ECDH_anon_WITH_AES_256_CBC_SHA)(TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA)(SSL_DH_anon_EXPORT_WITH_RC4_40_MD5)(SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA)(TLS_ECDH_anon_WITH_NULL_SHA)</disabled_ciphers>
 	<discover_ip_refresh>60</discover_ip_refresh>
 	<disable_mdtm_modifications>false</disable_mdtm_modifications>
@@ -154,15 +154,15 @@
 	<lsla2>false</lsla2>
 	<login_page_list type="vector">
 		<login_page_list_subitem type="properties">
-			<domain>*</domain>
 			<page>login.html</page>
+			<domain>*</domain>
 		</login_page_list_subitem>
 	</login_page_list>
 	<previews_path>./</previews_path>
 	<domain_cookie></domain_cookie>
 	<event_asynch>false</event_asynch>
 	<send_dmz_error_events_to_internal>true</send_dmz_error_events_to_internal>
-	<login_hammer_timeout>0</login_hammer_timeout>
+	<login_hammer_timeout>1</login_hammer_timeout>
 	<http_chunk_temp_storage></http_chunk_temp_storage>
 	<allow_symlink_webinterface>false</allow_symlink_webinterface>
 	<logging_db_driver_file>./mysql-connector-java-5.0.4-bin.jar</logging_db_driver_file>
@@ -182,8 +182,8 @@
 	<search_db_query>SELECT * FROM SEARCH_INFO WHERE ITEM_PATH LIKE ?</search_db_query>
 	<validate_internal_share_username>false</validate_internal_share_username>
 	<sql_users_reset_cache_on_changes>true</sql_users_reset_cache_on_changes>
-	<generic_ftp_responses>false</generic_ftp_responses>
 	<stats_delete_transfers_time>DELETE FROM TRANSFERS WHERE START_TIME &lt; ?</stats_delete_transfers_time>
+	<generic_ftp_responses>false</generic_ftp_responses>
 	<mdtm_gmt>false</mdtm_gmt>
 	<uploaded_files>0</uploaded_files>
 	<log_roll_date_format>yyyyMMdd_HHmmss</log_roll_date_format>
@@ -225,10 +225,10 @@
 	<logging_db_query>select LOG_DATA,LOG_MILLIS,LOG_ROW_NUM from CRUSHFTP_LOG where LOG_ROW_NUM &gt;= ? and LOG_ROW_NUM &lt;= ? order by LOG_ROW_NUM</logging_db_query>
 	<http_header11></http_header11>
 	<http_header10></http_header10>
-	<hammer_attempts_http>10000</hammer_attempts_http>
+	<hammer_attempts_http>100</hammer_attempts_http>
 	<log_ftp_client_listings>true</log_ftp_client_listings>
-	<chammer_banning>30</chammer_banning>
 	<stats_get_meta_info>select * from META_INFO where LOCATE(UPPER(ITEM_VALUE), UPPER(?)) &gt; 0</stats_get_meta_info>
+	<chammer_banning>30</chammer_banning>
 	<s3crush_replicated>true</s3crush_replicated>
 	<stats_db_pass></stats_db_pass>
 	<ip_restrictions type="vector">
@@ -236,7 +236,6 @@
 			<start_ip>0.0.0.0</start_ip>
 			<type>A</type>
 			<stop_ip>255.255.255.255</stop_ip>
-			<reason></reason>
 		</ip_restrictions_subitem>
 	</ip_restrictions>
 	<user_log_buffer>500</user_log_buffer>
@@ -257,7 +256,7 @@ Requested from IP:%user_ip%</emailReminderBodyText>
 	<serverbeat_dmz_master>false</serverbeat_dmz_master>
 	<http_header6></http_header6>
 	<http_header5></http_header5>
-	<hammer_attempts>10000</hammer_attempts>
+	<hammer_attempts>100</hammer_attempts>
 	<http_header4></http_header4>
 	<http_header3></http_header3>
 	<http_header2></http_header2>
@@ -296,32 +295,78 @@ Requested from IP:%user_ip%</emailReminderBodyText>
 	<plugins type="vector">
 		<plugins_subitem type="vector">
 			<plugins_subitem_subitem type="properties">
-				<version>4.0</version>
-				<debug>false</debug>
+				<version>4.0.3</version>
+				<user></user>
+				<interval>60</interval>
 				<enabled>false</enabled>
-				<usernames></usernames>
-				<pluginName>ContentBlocker</pluginName>
+				<pass></pass>
+				<domain></domain>
+				<pluginName>CrushNoIP</pluginName>
 				<subItem></subItem>
-				<dir_list></dir_list>
 			</plugins_subitem_subitem>
 		</plugins_subitem>
 		<plugins_subitem type="vector">
 			<plugins_subitem_subitem type="properties">
+				<version>4.1</version>
 				<debug>false</debug>
-				<device>auto</device>
-				<subItem></subItem>
-				<username_filter>*</username_filter>
-				<duo_host>api-XXXXXXXX.duosecurity.com</duo_host>
-				<ikey></ikey>
-				<event_only>false</event_only>
-				<pluginName>CrushDuo</pluginName>
-				<version>8.1.0</version>
 				<enabled>false</enabled>
-				<crushduo_cahche_time>0</crushduo_cahche_time>
-				<factor>auto</factor>
-				<fail_only_on_duo_deny>false</fail_only_on_duo_deny>
-				<skey></skey>
+				<snapshots></snapshots>
+				<pluginName>PreferencesController</pluginName>
+				<actions></actions>
+				<subItem></subItem>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<pluginName>MagicDirectory</pluginName>
+				<separator>--</separator>
+				<version>4.3.5e</version>
+				<email_body>Your account has been created.&#xD;
+Your username is:%user%&#xD;
+Your password is:%pass%</email_body>
+				<expireFormat>MMddyyyy</expireFormat>
+				<email_cc></email_cc>
+				<templateUser>default</templateUser>
+				<depths>1</depths>
+				<home_name></home_name>
+				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
+				<enabled>false</enabled>
+				<md5_password>false</md5_password>
+				<email_from></email_from>
+				<notify_email>true</notify_email>
+				<email_subject>CrushFTP account activated : %user%</email_subject>
+				<subItem></subItem>
+				<debug>false</debug>
+				<deleteAccount>false</deleteAccount>
+				<path></path>
+				<email>false</email>
+				<random_password>false</random_password>
+				<email_bcc></email_bcc>
+				<expiration>true</expiration>
+				<web_char>false</web_char>
+				<quota_all>false</quota_all>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<pluginName>HomeDirectory</pluginName>
+				<uniqueFolder>false</uniqueFolder>
+				<version>4.3.7</version>
+				<templateUser></templateUser>
+				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
+				<enabled>false</enabled>
+				<username_filter>*</username_filter>
+				<subItem></subItem>
 				<server_item>All</server_item>
+				<debug>false</debug>
+				<path></path>
+				<prependUsername>true</prependUsername>
+				<always_generate>false</always_generate>
+				<memory_only>false</memory_only>
+				<event_only>false</event_only>
+				<additional_paths></additional_paths>
+				<erase_home>false</erase_home>
+				<uniqueFolderFormat>_MM.dd.yyyy</uniqueFolderFormat>
 			</plugins_subitem_subitem>
 		</plugins_subitem>
 		<plugins_subitem type="vector">
@@ -371,108 +416,46 @@ Requested from IP:%user_ip%</emailReminderBodyText>
 				<acl_permissions>false</acl_permissions>
 				<cache_minutes>20</cache_minutes>
 				<key_mappings></key_mappings>
-				<timeout>30</timeout>
 				<simple_username_login_first>false</simple_username_login_first>
+				<timeout>30</timeout>
 				<follow_referral>follow</follow_referral>
-				<version>4.3.7</version>
 				<searchFilter>sAMAccountName</searchFilter>
+				<version>4.3.7</version>
 				<pluginName>CrushLDAPGroup</pluginName>
-				<ldapURL>ldap://ldap.company.com/</ldapURL>
 				<UserHome></UserHome>
+				<ldapURL>ldap://ldap.company.com/</ldapURL>
 				<smb_permissions>false</smb_permissions>
 			</plugins_subitem_subitem>
 		</plugins_subitem>
 		<plugins_subitem type="vector">
 			<plugins_subitem_subitem type="properties">
-				<version>4.0.3</version>
-				<interval>60</interval>
-				<user></user>
+				<version>4.0</version>
+				<debug>false</debug>
 				<enabled>false</enabled>
-				<pass></pass>
-				<pluginName>CrushNoIP</pluginName>
-				<domain></domain>
+				<usernames></usernames>
+				<pluginName>DuplicateBlocker</pluginName>
+				<dir_list></dir_list>
 				<subItem></subItem>
 			</plugins_subitem_subitem>
 		</plugins_subitem>
 		<plugins_subitem type="vector">
 			<plugins_subitem_subitem type="properties">
-				<create_sql_dirs_needed>false</create_sql_dirs_needed>
-				<pluginName>CrushSQL</pluginName>
-				<db_url>jdbc:mysql://127.0.0.1:3306/crushftp?autoReconnect=true</db_url>
-				<delete_expired_accounts>false</delete_expired_accounts>
-				<db_user_query>select * from users &#xD;
- where userName=? &#xD;
- and userPass=? &#xD;
- and (expireDate is null or expireDate &gt; ?)</db_user_query>
-				<db_drv_file>./mysql-connector-java-5.0.4-bin.jar</db_drv_file>
-				<create_sql_dirs>false</create_sql_dirs>
-				<version>4.3.5</version>
-				<templateUser>default</templateUser>
-				<sql_df>yyyy-MM-dd HH:mm:ss</sql_df>
-				<enabled>false</enabled>
-				<archive_path>/Archive/</archive_path>
-				<db_drv>org.gjt.mm.mysql.Driver</db_drv>
-				<dump_xml_user>false</dump_xml_user>
-				<subItem></subItem>
-				<db_expired_user_query>select * from users where (expireDate is not null and expireDate &lt; ?)</db_expired_user_query>
-				<server_item>All</server_item>
 				<debug>false</debug>
-				<db_user>CrushSQL</db_user>
-				<db_pass></db_pass>
-				<scan_interval>10</scan_interval>
-				<move_expired_accounts_filesystem>false</move_expired_accounts_filesystem>
-				<db_quota_query>update directories set quotaBytes = ? &#xD;
- where id = ? and dirFTPPath = ? and dirName = ?</db_quota_query>
-				<delete_expired_accounts_filesystem>false</delete_expired_accounts_filesystem>
-				<db_user_list_query>select * from users</db_user_list_query>
-				<db_user_list_1_query>select * from users where userName=?</db_user_list_1_query>
-			</plugins_subitem_subitem>
-		</plugins_subitem>
-		<plugins_subitem type="vector">
-			<plugins_subitem_subitem type="properties">
-				<user_multi_role_lookup>false</user_multi_role_lookup>
-				<homeDirectory>homeDirectory</homeDirectory>
-				<createFolder>true</createFolder>
-				<createHomeDirectory>false</createHomeDirectory>
-				<enabled>false</enabled>
-				<user_connection_groups>All</user_connection_groups>
-				<allow_forward>true</allow_forward>
-				<adminPassword>fakepassword</adminPassword>
-				<usernameTemplate>default</usernameTemplate>
-				<user_home_config type="properties">
-					<holder>true</holder>
-				</user_home_config>
-				<privs>(read)(write)(view)(delete)(deletedir)(makedir)(rename)(resume)</privs>
 				<subItem></subItem>
-				<appendUsername>true</appendUsername>
-				<adminUsername>ldapSearch</adminUsername>
-				<randomize_home_name>false</randomize_home_name>
-				<create_local_user>false</create_local_user>
-				<allow_reverse>true</allow_reverse>
-				<groupquerydirect>false</groupquerydirect>
-				<auth_method>simple</auth_method>
-				<show_error_message>false</show_error_message>
-				<validate_before_other_plugins>false</validate_before_other_plugins>
-				<retry_fullusername_login>true</retry_fullusername_login>
-				<debug>false</debug>
-				<authenticationOnly>false</authenticationOnly>
-				<acceptAnyCert>false</acceptAnyCert>
-				<create_local_user_template></create_local_user_template>
-				<memberOf>member</memberOf>
-				<ldap_roles></ldap_roles>
-				<server_item>All</server_item>
-				<additional_paths></additional_paths>
+				<overwrite_vfs>true</overwrite_vfs>
 				<useLocalDirectory>false</useLocalDirectory>
-				<searchBase>DC=domain,DC=com</searchBase>
-				<key_mappings></key_mappings>
-				<simple_username_login_first>false</simple_username_login_first>
-				<follow_referral>follow</follow_referral>
-				<searchFilter>sAMAccountName</searchFilter>
-				<version>6.1</version>
-				<pluginName>CrushSSO</pluginName>
-				<ldapURL>ldap://ldap.company.com/</ldapURL>
-				<UserHome></UserHome>
-				<addon_privs>(share)(slideshow)</addon_privs>
+				<usernameTemplate></usernameTemplate>
+				<createFolder>true</createFolder>
+				<enabled>false</enabled>
+				<pluginName>SalesForce</pluginName>
+				<version>1.0</version>
+				<post_url>https://login.salesforce.com/services/oauth2/token</post_url>
+				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
+				<additional_paths></additional_paths>
+				<post_args>grant_type=password&amp;client_id=AAA&amp;client_secret=BBB&amp;username={username}&amp;password={password}</post_args>
+				<appendUsername>true</appendUsername>
+				<server_item>All</server_item>
+				<home_folder></home_folder>
 			</plugins_subitem_subitem>
 		</plugins_subitem>
 		<plugins_subitem type="vector">
@@ -483,230 +466,12 @@ Requested from IP:%user_ip%</emailReminderBodyText>
 				<subItem></subItem>
 				<tasks></tasks>
 				<log_enabled>true</log_enabled>
-				<enabled>true</enabled>
-				<pluginName>CrushTask</pluginName>
 				<version>7.0</version>
+				<pluginName>CrushTask</pluginName>
+				<enabled>true</enabled>
 				<startPointPosition>100,100</startPointPosition>
-				<save_state>true</save_state>
 				<connections></connections>
-			</plugins_subitem_subitem>
-		</plugins_subitem>
-		<plugins_subitem type="vector">
-			<plugins_subitem_subitem type="properties">
-				<version>4.0</version>
-				<debug>false</debug>
-				<enabled>false</enabled>
-				<usernames></usernames>
-				<pluginName>DuplicateBlocker</pluginName>
-				<subItem></subItem>
-				<dir_list></dir_list>
-			</plugins_subitem_subitem>
-		</plugins_subitem>
-		<plugins_subitem type="vector">
-			<plugins_subitem_subitem type="properties">
-				<pluginName>HomeDirectory</pluginName>
-				<uniqueFolder>false</uniqueFolder>
-				<version>4.3.7</version>
-				<templateUser></templateUser>
-				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
-				<enabled>false</enabled>
-				<username_filter>*</username_filter>
-				<subItem></subItem>
-				<server_item>All</server_item>
-				<debug>false</debug>
-				<path></path>
-				<prependUsername>true</prependUsername>
-				<always_generate>false</always_generate>
-				<memory_only>false</memory_only>
-				<event_only>false</event_only>
-				<additional_paths></additional_paths>
-				<uniqueFolderFormat>_MM.dd.yyyy</uniqueFolderFormat>
-				<erase_home>false</erase_home>
-			</plugins_subitem_subitem>
-		</plugins_subitem>
-		<plugins_subitem type="vector">
-			<plugins_subitem_subitem type="properties">
-				<pluginName>MagicDirectory</pluginName>
-				<separator>--</separator>
-				<version>4.3.5e</version>
-				<email_body>Your account has been created.&#xD;
-Your username is:%user%&#xD;
-Your password is:%pass%</email_body>
-				<expireFormat>MMddyyyy</expireFormat>
-				<email_cc></email_cc>
-				<templateUser>default</templateUser>
-				<depths>1</depths>
-				<home_name></home_name>
-				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
-				<enabled>false</enabled>
-				<md5_password>false</md5_password>
-				<email_from></email_from>
-				<notify_email>true</notify_email>
-				<email_subject>CrushFTP account activated : %user%</email_subject>
-				<subItem></subItem>
-				<debug>false</debug>
-				<path></path>
-				<deleteAccount>false</deleteAccount>
-				<email>false</email>
-				<email_bcc></email_bcc>
-				<random_password>false</random_password>
-				<expiration>true</expiration>
-				<web_char>false</web_char>
-				<quota_all>false</quota_all>
-			</plugins_subitem_subitem>
-		</plugins_subitem>
-		<plugins_subitem type="vector">
-			<plugins_subitem_subitem type="properties">
-				<version>4.1</version>
-				<debug>false</debug>
-				<enabled>false</enabled>
-				<pluginName>PreferencesController</pluginName>
-				<snapshots></snapshots>
-				<actions></actions>
-				<subItem></subItem>
-			</plugins_subitem_subitem>
-		</plugins_subitem>
-		<plugins_subitem type="vector">
-			<plugins_subitem_subitem type="properties">
-				<pluginName>Radius</pluginName>
-				<createFolder>true</createFolder>
-				<retries>5</retries>
-				<remote_plugin_call>true</remote_plugin_call>
-				<version>4.2</version>
-				<nas_port>10</nas_port>
-				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
-				<enabled>false</enabled>
-				<timeout>1</timeout>
-				<authenticator>CHAPAuthenticator</authenticator>
-				<home_folder></home_folder>
-				<subItem></subItem>
-				<appendUsername>true</appendUsername>
-				<server_item>All</server_item>
-				<debug>false</debug>
-				<ldap_roles></ldap_roles>
-				<overwrite_vfs>true</overwrite_vfs>
-				<radius_port>1812</radius_port>
-				<shared_secret></shared_secret>
-				<usernameTemplate></usernameTemplate>
-				<useLocalDirectory>false</useLocalDirectory>
-				<authenticationOnly>false</authenticationOnly>
-				<radius_host>localhost</radius_host>
-				<additional_paths></additional_paths>
-			</plugins_subitem_subitem>
-		</plugins_subitem>
-		<plugins_subitem type="vector">
-			<plugins_subitem_subitem type="properties">
-				<idp_redirect_url></idp_redirect_url>
-				<user_multi_role_lookup>false</user_multi_role_lookup>
-				<saml_stream_cipher>AES/CBC/NoPadding</saml_stream_cipher>
-				<saml_sign_auth>false</saml_sign_auth>
-				<homeDirectory>homeDirectory</homeDirectory>
-				<remote_plugin_call>true</remote_plugin_call>
-				<createFolder>true</createFolder>
-				<saml_decryption_cipher>RSA</saml_decryption_cipher>
-				<overwrite_vfs>true</overwrite_vfs>
-				<saml_signing_cert></saml_signing_cert>
-				<name_id_format>unspecified</name_id_format>
-				<createHomeDirectory>false</createHomeDirectory>
-				<enabled>false</enabled>
-				<saml_group_name>group</saml_group_name>
-				<user_connection_groups>All</user_connection_groups>
-				<allow_forward>true</allow_forward>
-				<adminPassword>fakepassword</adminPassword>
-				<usernameTemplate>default</usernameTemplate>
-				<authenticator>CHAPAuthenticator</authenticator>
-				<user_home_config type="properties">
-					<holder>true</holder>
-				</user_home_config>
-				<privs>(read)(write)(view)(delete)(deletedir)(makedir)(rename)(resume)</privs>
-				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
-				<subItem></subItem>
-				<appendUsername>true</appendUsername>
-				<adminUsername>ldapSearch</adminUsername>
-				<randomize_home_name>false</randomize_home_name>
-				<create_local_user>false</create_local_user>
-				<allow_reverse>true</allow_reverse>
-				<groupquerydirect>false</groupquerydirect>
-				<auth_method>simple</auth_method>
-				<show_error_message>false</show_error_message>
-				<validate_before_other_plugins>false</validate_before_other_plugins>
-				<retry_fullusername_login>true</retry_fullusername_login>
-				<saml_decryption_keystore></saml_decryption_keystore>
-				<compress_auth>false</compress_auth>
-				<debug>false</debug>
-				<saml_audience>CrushFTP</saml_audience>
-				<authenticationOnly>false</authenticationOnly>
-				<acceptAnyCert>false</acceptAnyCert>
-				<create_local_user_template></create_local_user_template>
-				<saml_decryption_keystore_password></saml_decryption_keystore_password>
-				<memberOf>member</memberOf>
-				<ldap_roles></ldap_roles>
-				<server_item>All</server_item>
-				<saml_send_post>false</saml_send_post>
-				<additional_paths></additional_paths>
-				<useLocalDirectory>false</useLocalDirectory>
-				<searchBase>DC=domain,DC=com</searchBase>
-				<saml_issuer></saml_issuer>
-				<cache_minutes>20</cache_minutes>
-				<key_mappings></key_mappings>
-				<authentication_class>auto</authentication_class>
-				<timeout>30</timeout>
-				<simple_username_login_first>false</simple_username_login_first>
-				<saml_provider_url>http://www.okta.com/gdfhsdfcuhdbfgdfgdsh7</saml_provider_url>
-				<name_qualifier></name_qualifier>
-				<follow_referral>follow</follow_referral>
-				<searchFilter>sAMAccountName</searchFilter>
-				<saml_validate_signature>true</saml_validate_signature>
-				<version>6.1</version>
-				<pluginName>SAMLSSO</pluginName>
-				<return_url></return_url>
-				<ldapURL>ldap://ldap.company.com/</ldapURL>
-				<UserHome></UserHome>
-				<saml_decryption_key_password></saml_decryption_key_password>
-			</plugins_subitem_subitem>
-		</plugins_subitem>
-		<plugins_subitem type="vector">
-			<plugins_subitem_subitem type="properties">
-				<debug>false</debug>
-				<subItem></subItem>
-				<overwrite_vfs>true</overwrite_vfs>
-				<useLocalDirectory>false</useLocalDirectory>
-				<usernameTemplate></usernameTemplate>
-				<createFolder>true</createFolder>
-				<version>1.0</version>
-				<pluginName>SalesForce</pluginName>
-				<enabled>false</enabled>
-				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
-				<post_url>https://login.salesforce.com/services/oauth2/token</post_url>
-				<additional_paths></additional_paths>
-				<post_args>grant_type=password&amp;client_id=AAA&amp;client_secret=BBB&amp;username={username}&amp;password={password}</post_args>
-				<appendUsername>true</appendUsername>
-				<server_item>All</server_item>
-				<home_folder></home_folder>
-			</plugins_subitem_subitem>
-		</plugins_subitem>
-		<plugins_subitem type="vector">
-			<plugins_subitem_subitem type="properties">
-				<pluginName>SharedLogin</pluginName>
-				<createFolder>true</createFolder>
-				<method>POST</method>
-				<version>6.1</version>
-				<UserHome></UserHome>
-				<enabled>false</enabled>
-				<findBad>Sorry, but you do not have permission to view this content.</findBad>
-				<postParams>log={username}&amp;pwd={password}</postParams>
-				<subItem></subItem>
-				<appendUsername>true</appendUsername>
-				<server_item>All</server_item>
-				<loginGood>'result': true</loginGood>
-				<loginUrl>http://www.domain.com/subdomain/wp-login.php?login-with-ajax=login</loginUrl>
-				<debug>false</debug>
-				<testUrl>http://www.domain.com/subdomain/administrator/</testUrl>
-				<usernameTemplate>default</usernameTemplate>
-				<useLocalDirectory>true</useLocalDirectory>
-				<authenticationOnly>false</authenticationOnly>
-				<privs>(read)(write)(view)(delete)(deletedir)(makedir)(rename)(resume)</privs>
-				<findGood></findGood>
+				<save_state>true</save_state>
 			</plugins_subitem_subitem>
 		</plugins_subitem>
 		<plugins_subitem type="vector">
@@ -751,16 +516,40 @@ Your password is:%pass%</email_body>
 				<sharedSecret>quvKsbImBkU=</sharedSecret>
 				<cache_minutes>20</cache_minutes>
 				<key_mappings></key_mappings>
-				<simple_username_login_first>false</simple_username_login_first>
 				<timeout>30</timeout>
+				<simple_username_login_first>false</simple_username_login_first>
 				<follow_referral>follow</follow_referral>
-				<searchFilter>sAMAccountName</searchFilter>
 				<version>6.1</version>
-				<pluginName>UniSSO</pluginName>
+				<searchFilter>sAMAccountName</searchFilter>
 				<return_url>http://127.0.0.1:8080/</return_url>
-				<ldapURL>ldap://ldap.company.com/</ldapURL>
+				<pluginName>UniSSO</pluginName>
 				<UserHome></UserHome>
+				<ldapURL>ldap://ldap.company.com/</ldapURL>
 				<addon_privs>(share)(slideshow)</addon_privs>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<pluginName>SharedLogin</pluginName>
+				<createFolder>true</createFolder>
+				<method>POST</method>
+				<version>6.1</version>
+				<UserHome></UserHome>
+				<enabled>false</enabled>
+				<findBad>Sorry, but you do not have permission to view this content.</findBad>
+				<postParams>log={username}&amp;pwd={password}</postParams>
+				<subItem></subItem>
+				<appendUsername>true</appendUsername>
+				<server_item>All</server_item>
+				<loginGood>'result': true</loginGood>
+				<loginUrl>http://www.domain.com/subdomain/wp-login.php?login-with-ajax=login</loginUrl>
+				<debug>false</debug>
+				<testUrl>http://www.domain.com/subdomain/administrator/</testUrl>
+				<usernameTemplate>default</usernameTemplate>
+				<authenticationOnly>false</authenticationOnly>
+				<useLocalDirectory>true</useLocalDirectory>
+				<privs>(read)(write)(view)(delete)(deletedir)(makedir)(rename)(resume)</privs>
+				<findGood></findGood>
 			</plugins_subitem_subitem>
 		</plugins_subitem>
 		<plugins_subitem type="vector">
@@ -773,15 +562,225 @@ Your password is:%pass%</email_body>
 				<username>{username}</username>
 				<usernameTemplate></usernameTemplate>
 				<user_post_data></user_post_data>
-				<pluginName>WebApplication</pluginName>
-				<version>5.0.4</version>
 				<enabled>false</enabled>
+				<version>5.0.4</version>
+				<pluginName>WebApplication</pluginName>
 				<user_url>http://127.0.0.1/auth/user_properties.xml</user_url>
 				<vfs_url>http://127.0.0.1/auth/vfs_vectors.xml</vfs_url>
 				<permissions_url>http://127.0.0.1/auth/vfs_properties.xml</permissions_url>
 				<password>9vKKaAoAjpyMv5nTkghxIQ==</password>
 				<server_item>All</server_item>
 				<permissions_post_data></permissions_post_data>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<version>4.0</version>
+				<debug>false</debug>
+				<enabled>false</enabled>
+				<usernames></usernames>
+				<pluginName>ContentBlocker</pluginName>
+				<dir_list></dir_list>
+				<subItem></subItem>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<pluginName>Radius</pluginName>
+				<createFolder>true</createFolder>
+				<retries>5</retries>
+				<remote_plugin_call>true</remote_plugin_call>
+				<version>4.2</version>
+				<nas_port>10</nas_port>
+				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
+				<enabled>false</enabled>
+				<timeout>1</timeout>
+				<authenticator>CHAPAuthenticator</authenticator>
+				<home_folder></home_folder>
+				<subItem></subItem>
+				<appendUsername>true</appendUsername>
+				<server_item>All</server_item>
+				<debug>false</debug>
+				<ldap_roles></ldap_roles>
+				<overwrite_vfs>true</overwrite_vfs>
+				<radius_port>1812</radius_port>
+				<usernameTemplate></usernameTemplate>
+				<shared_secret></shared_secret>
+				<authenticationOnly>false</authenticationOnly>
+				<useLocalDirectory>false</useLocalDirectory>
+				<radius_host>localhost</radius_host>
+				<additional_paths></additional_paths>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<idp_redirect_url></idp_redirect_url>
+				<user_multi_role_lookup>false</user_multi_role_lookup>
+				<saml_stream_cipher>AES/CBC/NoPadding</saml_stream_cipher>
+				<saml_sign_auth>false</saml_sign_auth>
+				<homeDirectory>homeDirectory</homeDirectory>
+				<remote_plugin_call>true</remote_plugin_call>
+				<createFolder>true</createFolder>
+				<saml_decryption_cipher>RSA</saml_decryption_cipher>
+				<overwrite_vfs>true</overwrite_vfs>
+				<saml_signing_cert></saml_signing_cert>
+				<name_id_format>unspecified</name_id_format>
+				<createHomeDirectory>false</createHomeDirectory>
+				<enabled>false</enabled>
+				<saml_group_name>group</saml_group_name>
+				<user_connection_groups>All</user_connection_groups>
+				<allow_forward>true</allow_forward>
+				<adminPassword>fakepassword</adminPassword>
+				<usernameTemplate>default</usernameTemplate>
+				<authenticator>CHAPAuthenticator</authenticator>
+				<user_home_config type="properties">
+					<holder>true</holder>
+				</user_home_config>
+				<privs>(read)(write)(view)(delete)(deletedir)(makedir)(rename)(resume)</privs>
+				<permissions>(read)(write)(view)(delete)(resume)(rename)(makedir)(deletedir)</permissions>
+				<subItem></subItem>
+				<appendUsername>true</appendUsername>
+				<adminUsername>ldapSearch</adminUsername>
+				<randomize_home_name>false</randomize_home_name>
+				<create_local_user>false</create_local_user>
+				<allow_reverse>true</allow_reverse>
+				<groupquerydirect>false</groupquerydirect>
+				<auth_method>simple</auth_method>
+				<show_error_message>false</show_error_message>
+				<validate_before_other_plugins>false</validate_before_other_plugins>
+				<retry_fullusername_login>true</retry_fullusername_login>
+				<saml_decryption_keystore></saml_decryption_keystore>
+				<saml_audience>CrushFTP</saml_audience>
+				<debug>false</debug>
+				<compress_auth>false</compress_auth>
+				<authenticationOnly>false</authenticationOnly>
+				<acceptAnyCert>false</acceptAnyCert>
+				<create_local_user_template></create_local_user_template>
+				<saml_decryption_keystore_password></saml_decryption_keystore_password>
+				<memberOf>member</memberOf>
+				<ldap_roles></ldap_roles>
+				<server_item>All</server_item>
+				<additional_paths></additional_paths>
+				<saml_send_post>false</saml_send_post>
+				<useLocalDirectory>false</useLocalDirectory>
+				<searchBase>DC=domain,DC=com</searchBase>
+				<saml_issuer></saml_issuer>
+				<cache_minutes>20</cache_minutes>
+				<key_mappings></key_mappings>
+				<authentication_class>auto</authentication_class>
+				<saml_provider_url>http://www.okta.com/gdfhsdfcuhdbfgdfgdsh7</saml_provider_url>
+				<simple_username_login_first>false</simple_username_login_first>
+				<timeout>30</timeout>
+				<name_qualifier></name_qualifier>
+				<follow_referral>follow</follow_referral>
+				<version>6.1</version>
+				<saml_validate_signature>true</saml_validate_signature>
+				<searchFilter>sAMAccountName</searchFilter>
+				<return_url></return_url>
+				<pluginName>SAMLSSO</pluginName>
+				<UserHome></UserHome>
+				<ldapURL>ldap://ldap.company.com/</ldapURL>
+				<saml_decryption_key_password></saml_decryption_key_password>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<user_multi_role_lookup>false</user_multi_role_lookup>
+				<homeDirectory>homeDirectory</homeDirectory>
+				<createFolder>true</createFolder>
+				<createHomeDirectory>false</createHomeDirectory>
+				<enabled>false</enabled>
+				<user_connection_groups>All</user_connection_groups>
+				<allow_forward>true</allow_forward>
+				<adminPassword>fakepassword</adminPassword>
+				<usernameTemplate>default</usernameTemplate>
+				<user_home_config type="properties">
+					<holder>true</holder>
+				</user_home_config>
+				<privs>(read)(write)(view)(delete)(deletedir)(makedir)(rename)(resume)</privs>
+				<subItem></subItem>
+				<appendUsername>true</appendUsername>
+				<adminUsername>ldapSearch</adminUsername>
+				<randomize_home_name>false</randomize_home_name>
+				<create_local_user>false</create_local_user>
+				<allow_reverse>true</allow_reverse>
+				<groupquerydirect>false</groupquerydirect>
+				<auth_method>simple</auth_method>
+				<show_error_message>false</show_error_message>
+				<validate_before_other_plugins>false</validate_before_other_plugins>
+				<retry_fullusername_login>true</retry_fullusername_login>
+				<debug>false</debug>
+				<authenticationOnly>false</authenticationOnly>
+				<acceptAnyCert>false</acceptAnyCert>
+				<create_local_user_template></create_local_user_template>
+				<memberOf>member</memberOf>
+				<ldap_roles></ldap_roles>
+				<server_item>All</server_item>
+				<additional_paths></additional_paths>
+				<useLocalDirectory>false</useLocalDirectory>
+				<searchBase>DC=domain,DC=com</searchBase>
+				<key_mappings></key_mappings>
+				<simple_username_login_first>false</simple_username_login_first>
+				<follow_referral>follow</follow_referral>
+				<version>6.1</version>
+				<searchFilter>sAMAccountName</searchFilter>
+				<pluginName>CrushSSO</pluginName>
+				<UserHome></UserHome>
+				<ldapURL>ldap://ldap.company.com/</ldapURL>
+				<addon_privs>(share)(slideshow)</addon_privs>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<debug>false</debug>
+				<device>auto</device>
+				<subItem></subItem>
+				<username_filter>*</username_filter>
+				<duo_host>api-XXXXXXXX.duosecurity.com</duo_host>
+				<ikey></ikey>
+				<event_only>false</event_only>
+				<enabled>false</enabled>
+				<version>8.1.0</version>
+				<pluginName>CrushDuo</pluginName>
+				<factor>auto</factor>
+				<crushduo_cahche_time>0</crushduo_cahche_time>
+				<fail_only_on_duo_deny>false</fail_only_on_duo_deny>
+				<skey></skey>
+				<server_item>All</server_item>
+			</plugins_subitem_subitem>
+		</plugins_subitem>
+		<plugins_subitem type="vector">
+			<plugins_subitem_subitem type="properties">
+				<create_sql_dirs_needed>false</create_sql_dirs_needed>
+				<pluginName>CrushSQL</pluginName>
+				<db_url>jdbc:mysql://127.0.0.1:3306/crushftp?autoReconnect=true</db_url>
+				<delete_expired_accounts>false</delete_expired_accounts>
+				<db_user_query>select * from users &#xD;
+ where userName=? &#xD;
+ and userPass=? &#xD;
+ and (expireDate is null or expireDate &gt; ?)</db_user_query>
+				<db_drv_file>./mysql-connector-java-5.0.4-bin.jar</db_drv_file>
+				<create_sql_dirs>false</create_sql_dirs>
+				<version>4.3.5</version>
+				<templateUser>default</templateUser>
+				<sql_df>yyyy-MM-dd HH:mm:ss</sql_df>
+				<enabled>false</enabled>
+				<archive_path>/Archive/</archive_path>
+				<db_drv>org.gjt.mm.mysql.Driver</db_drv>
+				<dump_xml_user>false</dump_xml_user>
+				<subItem></subItem>
+				<db_expired_user_query>select * from users where (expireDate is not null and expireDate &lt; ?)</db_expired_user_query>
+				<server_item>All</server_item>
+				<debug>false</debug>
+				<db_user>CrushSQL</db_user>
+				<db_pass></db_pass>
+				<scan_interval>10</scan_interval>
+				<move_expired_accounts_filesystem>false</move_expired_accounts_filesystem>
+				<db_quota_query>update directories set quotaBytes = ? &#xD;
+ where id = ? and dirFTPPath = ? and dirName = ?</db_quota_query>
+				<db_user_list_query>select * from users</db_user_list_query>
+				<delete_expired_accounts_filesystem>false</delete_expired_accounts_filesystem>
+				<db_user_list_1_query>select * from users where userName=?</db_user_list_1_query>
 			</plugins_subitem_subitem>
 		</plugins_subitem>
 	</plugins>
@@ -805,7 +804,7 @@ Your password is:%pass%</email_body>
 			<running>true</running>
 			<server_ip>auto</server_ip>
 			<proxy_header>false</proxy_header>
-			<connected_users>0</connected_users>
+			<connected_users>1</connected_users>
 			<linkedServer>MainUsers</linkedServer>
 			<ip>lookup</ip>
 			<enabled>true</enabled>
@@ -813,14 +812,14 @@ Your password is:%pass%</email_body>
 			<ip_restrictions type="vector"></ip_restrictions>
 			<port>21</port>
 			<reverseProxyUrl></reverseProxyUrl>
-			<connection_number>0</connection_number>
+			<connection_number>2</connection_number>
 			<serverType>FTP</serverType>
 			<busyMessage></busyMessage>
-			<pasv_ports>2000-2010</pasv_ports>
+			<pasv_ports>2000-2100</pasv_ports>
 			<explicit_ssl>false</explicit_ssl>
 			<explicit_tls>false</explicit_tls>
-			<display>ftp://31.10.159.46/ is running, 0 users connected. Connections Processed : 0</display>
-			<ftp_aware_router>true</ftp_aware_router>
+			<display>ftp://31.10.159.46/ is running, 1 users connected. Connections Processed : 2</display>
+			<ftp_aware_router>false</ftp_aware_router>
 			<reverseProxyPath></reverseProxyPath>
 			<reverseProxyDomain></reverseProxyDomain>
 		</server_list_subitem>
@@ -829,18 +828,18 @@ Your password is:%pass%</email_body>
 			<new_http>true</new_http>
 			<proxy_header>false</proxy_header>
 			<port>8080</port>
-			<connected_users>1</connected_users>
 			<server_ip>auto</server_ip>
+			<connected_users>5</connected_users>
 			<explicit_ssl>true</explicit_ssl>
 			<ip_restrictions type="vector"></ip_restrictions>
+			<connection_number>5</connection_number>
 			<require_encryption>false</require_encryption>
-			<connection_number>37</connection_number>
 			<running>true</running>
-			<ip>lookup</ip>
 			<enabled>true</enabled>
-			<display>http://31.10.159.46:8080/ ( Web, WebDAV) is running, 1 users connected. Connections Processed : 37</display>
-			<serverType>HTTP</serverType>
+			<ip>lookup</ip>
+			<display>http://31.10.159.46:8080/ ( Web, WebDAV) is running, 5 users connected. Connections Processed : 5</display>
 			<explicit_tls>true</explicit_tls>
+			<serverType>HTTP</serverType>
 			<busyMessage></busyMessage>
 		</server_list_subitem>
 		<server_list_subitem type="properties">
@@ -848,18 +847,18 @@ Your password is:%pass%</email_body>
 			<new_http>true</new_http>
 			<proxy_header>false</proxy_header>
 			<port>9090</port>
-			<connected_users>0</connected_users>
 			<server_ip>auto</server_ip>
+			<connected_users>0</connected_users>
 			<explicit_ssl>true</explicit_ssl>
 			<ip_restrictions type="vector"></ip_restrictions>
-			<require_encryption>false</require_encryption>
 			<connection_number>0</connection_number>
+			<require_encryption>false</require_encryption>
 			<running>true</running>
-			<ip>lookup</ip>
 			<enabled>true</enabled>
+			<ip>lookup</ip>
 			<display>http://31.10.159.46:9090/ ( Web, WebDAV) is running, 0 users connected. Connections Processed : 0</display>
-			<serverType>HTTP</serverType>
 			<explicit_tls>true</explicit_tls>
+			<serverType>HTTP</serverType>
 			<busyMessage></busyMessage>
 		</server_list_subitem>
 		<server_list_subitem type="properties">
@@ -867,23 +866,23 @@ Your password is:%pass%</email_body>
 			<new_http>true</new_http>
 			<proxy_header>false</proxy_header>
 			<port>443</port>
-			<connected_users>0</connected_users>
 			<server_ip>auto</server_ip>
+			<connected_users>0</connected_users>
 			<explicit_ssl>true</explicit_ssl>
 			<ip_restrictions type="vector"></ip_restrictions>
-			<require_encryption>false</require_encryption>
 			<connection_number>0</connection_number>
+			<require_encryption>false</require_encryption>
 			<running>true</running>
-			<ip>lookup</ip>
 			<enabled>true</enabled>
+			<ip>lookup</ip>
 			<display>https://31.10.159.46/ ( Web, WebDAV SSL ) is running, 0 users connected. Connections Processed : 0</display>
-			<serverType>HTTPS</serverType>
 			<explicit_tls>true</explicit_tls>
+			<serverType>HTTPS</serverType>
 			<busyMessage></busyMessage>
 		</server_list_subitem>
 		<server_list_subitem type="properties">
 			<proxy_header>false</proxy_header>
-			<ssh_local_port>36291</ssh_local_port>
+			<ssh_local_port>39587</ssh_local_port>
 			<ssh_require_password>false</ssh_require_password>
 			<enabled>true</enabled>
 			<connected_users>0</connected_users>
@@ -931,8 +930,8 @@ Your password is:%pass%</email_body>
 	<recent_temp_job_log_days>7</recent_temp_job_log_days>
 	<login_custom_script></login_custom_script>
 	<event_reuse>true</event_reuse>
-	<task_max_runtime_minutes></task_max_runtime_minutes>
 	<stats_get_transfers_count_period>select count(TRANSFER_SIZE) from TRANSFERS t, SESSIONS s where DIRECTION = ? and (IGNORE_SIZE = 'N' or IGNORE_SIZE is null) and t.SESSION_RID = s.RID and USER_NAME = ? and t.START_TIME &gt;= ?</stats_get_transfers_count_period>
+	<task_max_runtime_minutes></task_max_runtime_minutes>
 	<sha3_keccak>false</sha3_keccak>
 	<server_download_queue_size_max>0</server_download_queue_size_max>
 	<synchronized_sftp>true</synchronized_sftp>
@@ -985,7 +984,7 @@ Your password is:%pass%</email_body>
 	<rid>1608048486827</rid>
 	<smtp_client_action></smtp_client_action>
 	<stats_insert_transfers>INSERT INTO TRANSFERS (RID, SESSION_RID, START_TIME, DIRECTION, PATH, FILE_NAME, URL, SPEED, TRANSFER_SIZE, IGNORE_SIZE) VALUES (?,?,?,?,?,?,?,?,?,'N')</stats_insert_transfers>
-	<xmlUsers>false</xmlUsers>
+	<xmlUsers>true</xmlUsers>
 	<server_info_history_days>30</server_info_history_days>
 	<max_url_length>99999</max_url_length>
 	<single_report_scheduler_serverbeat>true</single_report_scheduler_serverbeat>
@@ -1002,8 +1001,8 @@ Your password is:%pass%</email_body>
 	<rnto_overwrite>false</rnto_overwrite>
 	<stats_get_max_transfers_rid>select max(RID) from TRANSFERS</stats_get_max_transfers_rid>
 	<smtp_client_id></smtp_client_id>
-	<serverbeat_unplumb>true</serverbeat_unplumb>
 	<syncs_delete_journal_expired>DELETE from FILE_JOURNAL where EVENT_TIME &lt; ?</syncs_delete_journal_expired>
+	<serverbeat_unplumb>true</serverbeat_unplumb>
 	<default_system_group></default_system_group>
 	<syncs_db_user>app</syncs_db_user>
 	<total_server_bytes_received_long>0</total_server_bytes_received_long>
@@ -1011,15 +1010,15 @@ Your password is:%pass%</email_body>
 	<ignore_failed_directory_listings>false</ignore_failed_directory_listings>
 	<as2_sha256>sha-256</as2_sha256>
 	<failed_logins>0</failed_logins>
-	<store_job_items>true</store_job_items>
 	<search_db_insert>INSERT INTO SEARCH_INFO (ITEM_PATH, ITEM_TYPE, ITEM_SIZE, ITEM_MODIFIED, ITEM_KEYWORDS) VALUES (?,?,?,?,?)</search_db_insert>
+	<store_job_items>true</store_job_items>
 	<memcache>false</memcache>
 	<smtp_report_html>true</smtp_report_html>
 	<ssh_randomaccess>false</ssh_randomaccess>
 	<fips140_sftp_server>false</fips140_sftp_server>
 	<sftp_chunk_buffer>200</sftp_chunk_buffer>
-	<max_denied_ips>100</max_denied_ips>
 	<syncs_db_pass></syncs_db_pass>
+	<max_denied_ips>100</max_denied_ips>
 	<registration_name>crush</registration_name>
 	<job_statistics_enabled>false</job_statistics_enabled>
 	<reportSchedules type="vector"></reportSchedules>
@@ -1029,9 +1028,9 @@ Your password is:%pass%</email_body>
 	<replicated_vfs_url></replicated_vfs_url>
 	<roll_log_count>30</roll_log_count>
 	<logging_db_user>crushftp</logging_db_user>
+	<stats_get_sessions_time>SELECT RID FROM SESSIONS WHERE START_TIME &lt; ?</stats_get_sessions_time>
 	<temp_accounts_path>./TempAccounts/</temp_accounts_path>
 	<http_session_timeout>60</http_session_timeout>
-	<stats_get_sessions_time>SELECT RID FROM SESSIONS WHERE START_TIME &lt; ?</stats_get_sessions_time>
 	<plugin_log_call>false</plugin_log_call>
 	<gigabytes_label>Giga</gigabytes_label>
 	<expire_emailed_passwords>false</expire_emailed_passwords>
@@ -1068,7 +1067,7 @@ Your password is:%pass%</email_body>
 	<temp_accounts_length>4</temp_accounts_length>
 	<block_hack_username_immediately>false</block_hack_username_immediately>
 	<default_logo>logo.png</default_logo>
-	<hban_timeout>1</hban_timeout>
+	<hban_timeout>0</hban_timeout>
 	<resolve_inheritance>true</resolve_inheritance>
 	<posix>true</posix>
 	<username_uppercase>false</username_uppercase>
@@ -1094,7 +1093,7 @@ Your password is:%pass%</email_body>
 	<socketpool_timeout>20</socketpool_timeout>
 	<allow_save_pass_phone>false</allow_save_pass_phone>
 	<registration_email>ftp</registration_email>
-	<chammer_attempts>10000</chammer_attempts>
+	<chammer_attempts>100</chammer_attempts>
 	<show_vfs_root_folders_mdtm>false</show_vfs_root_folders_mdtm>
 	<separate_speeds_by_username_ip>false</separate_speeds_by_username_ip>
 	<allow_filetree>true</allow_filetree>
@@ -1117,8 +1116,8 @@ Your password is:%pass%</email_body>
 	<deny_reserved_ports>true</deny_reserved_ports>
 	<multi_journal_timeout>30000</multi_journal_timeout>
 	<logging_db_insert>insert into CRUSHFTP_LOG (LOG_MILLIS,LOG_TAG,LOG_DATA,LOG_ROW_NUM) values(?,?,?,?)</logging_db_insert>
-	<acl_mode>2</acl_mode>
 	<search_db_delete>DELETE FROM SEARCH_INFO WHERE ITEM_PATH LIKE ?</search_db_delete>
+	<acl_mode>2</acl_mode>
 	<jobs_location>./</jobs_location>
 	<as2_mic_alg>optional, sha-256, sha1, md5</as2_mic_alg>
 	<relaxed_event_grouping>false</relaxed_event_grouping>
@@ -1170,7 +1169,7 @@ Your password is:%pass%</email_body>
 	<fips140_sftp_client>false</fips140_sftp_client>
 	<stat_auto_increment>false</stat_auto_increment>
 	<http_header_timeout>30000</http_header_timeout>
-	<never_ban>127.0.0.1,10.*</never_ban>
+	<never_ban>127.0.0.1</never_ban>
 	<server_groups type="vector">
 		<server_groups_subitem>MainUsers</server_groups_subitem>
 	</server_groups>
@@ -1183,7 +1182,7 @@ Your password is:%pass%</email_body>
 	<disconnect_ftp_on_socket_error>false</disconnect_ftp_on_socket_error>
 	<reverse_events>false</reverse_events>
 	<list_zip_app>true</list_zip_app>
-	<externalSqlUsers>true</externalSqlUsers>
+	<externalSqlUsers>false</externalSqlUsers>
 	<hammer_banning>10</hammer_banning>
 	<total_server_bytes_sent_long>0</total_server_bytes_sent_long>
 	<unsafe_filename_chars></unsafe_filename_chars>
@@ -1253,7 +1252,7 @@ Your password is:%pass%</email_body>
 	<update_proxy_type></update_proxy_type>
 	<encryption_pass_needed>false</encryption_pass_needed>
 	<vfs_cache_interval>60</vfs_cache_interval>
-	<successful_logins>8</successful_logins>
+	<successful_logins>5</successful_logins>
 	<temp_account_share_web_customizations>true</temp_account_share_web_customizations>
 	<max_threads>2000</max_threads>
 	<check_all_recursive_deletes>false</check_all_recursive_deletes>
@@ -1287,18 +1286,18 @@ Your password is:%pass%</email_body>
 	<s3_buffer>5</s3_buffer>
 	<log_date_format>MM/dd/yyyy HH:mm:ss.SSS</log_date_format>
 	<geoip_access_key></geoip_access_key>
-	<v10_beta>false</v10_beta>
 	<proxyDownloadRepository>./</proxyDownloadRepository>
-	<webinterface_show_password_rule>true</webinterface_show_password_rule>
+	<v10_beta>false</v10_beta>
 	<max_job_summary_scan>300</max_job_summary_scan>
+	<webinterface_show_password_rule>true</webinterface_show_password_rule>
 	<monitored_folders type="vector"></monitored_folders>
 	<hide_ftp_quota_log>false</hide_ftp_quota_log>
 	<include_ftp_nlst_path>false</include_ftp_nlst_path>
 	<stats_transfer_days>90</stats_transfer_days>
 	<webdav_agent_learning>true</webdav_agent_learning>
 	<logging_db_url>jdbc:mysql://127.0.0.1:3306/crushftp?autoReconnect=true</logging_db_url>
-	<rfc_proxy>false</rfc_proxy>
 	<newversion>true</newversion>
+	<rfc_proxy>false</rfc_proxy>
 	<stats_get_transfers_download>select count(*) from TRANSFERS where DIRECTION = 'DOWNLOAD' and SESSION_RID in (select RID from SESSIONS where USER_NAME = ?)</stats_get_transfers_download>
 	<expired_passwords_notify_now>false</expired_passwords_notify_now>
 	<login_header></login_header>

@@ -8,7 +8,8 @@ ADD ./crushftp_init.sh /var/opt/crushftp_init.sh
 ADD ./mysql-connector-java-5.1.47-bin.jar /var/opt/CrushFTP9/mysql-connector-java-5.1.47-bin.jar
 
 
-RUN	chmod +x /var/opt/crushftp_init.sh && \
+RUN	apk --no-cache add curl && \
+	chmod +x /var/opt/crushftp_init.sh && \
 	chmod +x /var/opt/setup.sh && \
     cd /var/opt/CrushFTP9 && java -jar /var/opt/CrushFTP9/CrushFTP.jar -a "fadmin" "admin"
     

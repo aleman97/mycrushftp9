@@ -1,0 +1,4 @@
+SESSION|01/21/2021 15:36:23.133|[HTTP:19_58084:lookup:8080] Accepting connection from: 172.17.0.1:58084
+SESSION|01/21/2021 15:36:23.139|[HTTP:19_58084_tlN::172.17.0.1] READ: *GET /WebInterface/Resources/js/jQuery/jquery-migrate-1.4.1.min.js HTTP/1.1*
+SESSION|01/21/2021 15:36:23.144|[HTTP:19_58084::172.17.0.1] WROTE: *HTTP/1.1 304 Not Modified*
+SESSION|01/21/2021 15:36:57.232|[19_58084::172.17.0.1] *Disconnected:*
